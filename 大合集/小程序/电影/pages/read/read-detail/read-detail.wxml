@@ -1,0 +1,15 @@
+<!--pages/read/read-detail/read-detail.wxml-->
+<view>
+    <image src="{{isPlay?music.coverImg:data.imgSrc}}" class="picOne"></image>
+    <image src="{{isPlay?'/images/music/music-begin.png':'/images/music/music-stop.png'}}" bind:tap="playMusic" class="music"></image>
+</view>
+<view class="detail-head">
+    <image src="{{data.avatar}}"></image>
+    <text>{{data.date}}</text>
+</view>
+<view class="words">{{data.title}}</view>
+<view class="detail-foot">
+    <image src="{{shared?'/images/icon/share.png':'/images/icon/share-anti.png'}}" class="picTwo" catchtap="onShare"></image>
+    <image src="{{collected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}" class="picThree" catchtap="onCollect"></image>
+</view>
+ <text class="wordsOne">{{data.detail}}</text>

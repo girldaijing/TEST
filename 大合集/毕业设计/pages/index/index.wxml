@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class="header">
+    <v-btn wx:if="{{!authorized}}" openType="getUserInfo" bind:onGet="onGetUserInfo" class="logo">
+        <image slot="image" class="image-btn" src="/images/logo.png" />
+    </v-btn>
+    <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}" class="logo"></image>
+    <view wx:if="{{authorized}}" class="name">{{userInfo.nickName}}</view>
+    <button wx:if="{{authorized}}" bindtap="begin" class="start">开启小程序之旅</button>
+</view>

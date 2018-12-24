@@ -1,0 +1,25 @@
+.welcome{
+    background-color: #b3d4db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome image{
+    width: 250rpx;
+    height: 250rpx;
+    margin-top: 180rpx;
+}
+.welcome text{
+    font-size: 50rpx;
+    font-weight: bold;
+    margin-top: 180rpx;
+}
+.welcome button{
+  
+    height: 100rpx;
+    line-height: 100rpx;
+    border-radius: 10rpx;
+    border: 1rpx solid rgba(4, 0, 255, 0.205);
+    background-color: #b3d4db;
+    margin-top: 180rpx;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css">
+</head>
+<body>
+    <p id="test" class="animated">hello</p>
+    <script>
+    var test=document.getElementById("test");
+    test.onmouseover=function(){
+        this.classList.add("shake");//鼠标放上去抖动
+    }
+    test.onmouseout=function(){
+        this.classList.remove("shake")//鼠标移出不抖动
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+<import src="/pages/template/banner.wxml"></import>
+<template is="banner" data="{{imgUrl}}"></template>
+
+<button bindtap="toggleuser">user</button>

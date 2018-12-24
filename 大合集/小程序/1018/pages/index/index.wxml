@@ -1,0 +1,2 @@
+<button catchtap="jump">like</button>
+<button catchtap="getData">获取值</button>

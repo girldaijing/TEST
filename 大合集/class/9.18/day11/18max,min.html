@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,3,4,0];
+        // function getMax(arr){
+        //     var max = arr[0];
+        //     for(let i =1;i<arr.length;i++){
+        //         if(arr[i]>max){
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // console.log(getMax(arr));
+        /*
+        ...arr展开数组 
+         */
+        var max = Math.max(...arr);
+        var min = Math.min(...arr);
+        console.log(max);
+        console.log(min);
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/top.css">
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="lib/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div id="granpa">
+        <div id="parent">
+            <div id="child">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // 获取一个元素距离顶部的高度
+
+        /* 
+        $(element).offset().top
+         */
+        //  $(()=>{
+        //      var top =  $("#child").offset().top;
+        //      console.log(top);
+        //  })
+        /* 
+        offsetParent,offsetTop
+         */
+         /* 只要父元素不为null,top值累加 当代top+parent.offsetTop */
+        window.onload = function () {
+            function getTop(element) {
+                var realTop = element.offsetTop;
+                var parent = element.offsetParent;
+                while (parent !== null) {
+                    realTop += parent.offsetTop;
+                    parent = parent.offsetParent;
+                }
+                return realTop;
+            }
+            var child = document.getElementById("child");
+            var top = getTop(child);
+            console.log(top);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<!--pages/introduce/introduce.wxml-->
+<image src="{{banner}}" mode="aspectFit"></image>
+<view class="detail">
+<p class="caption">{{title}}（{{date}}）</p>
+<p><text>评分：</text><text>{{average}}</text></p>
+<p><text>导演：</text><text>{{director}}</text></p>
+<p><text>主演：</text><text>{{castsName}}</text></p>
+</view>
+<view class="introduce">
+<p class="summary">摘要：</p>
+<text>{{sum}}</text>
+</view>

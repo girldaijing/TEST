@@ -1,0 +1,10 @@
+<!--pages/movie/movie.wxml-->
+    <import src="../movie/grid/grid"></import>
+    <view class="search" catchtap="onsearch">
+           <icon type="search" size="23" color="#404F89"></icon>
+           <text>请输入要搜索的内容</text>
+    </view>
+    <template is="gridTemplate" data="{{...in_theaters}}"></template>
+    <template is="gridTemplate" data="{{...coming_soon}}"></template>
+    <template is="gridTemplate" data="{{...top250}}"></template>
+

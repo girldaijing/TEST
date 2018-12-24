@@ -1,0 +1,26 @@
+/* pages/List/List.wxss */
+.listpic{
+    width: 100%;
+}
+.list,ul{
+    display: flex;
+    flex-direction: column;
+}
+.wordsOne{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.wordsTwo{
+    font-size: 12px;
+    color: #999999;
+    margin-left: 20px;
+}
+ul>li{
+    height: 50px;
+    line-height: 50px;
+    padding: 8px;
+    font-size: 15px;
+    margin: 10px;
+    background-color: #eee;
+}

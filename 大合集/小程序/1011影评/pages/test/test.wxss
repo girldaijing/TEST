@@ -1,0 +1,18 @@
+/* pages/test/test.wxss */
+/* .scroll{
+    width: 100%;
+    padding: 20rpx 0;
+    white-space: nowrap;
+} */
+image{
+    width: 300rpx;
+    height: 300rpx;
+    margin: 10rpx;
+    border-radius: 50%;
+  
+}
+view{
+    margin-top: 50rpx;
+    display: flex;
+    justify-content: center;
+}

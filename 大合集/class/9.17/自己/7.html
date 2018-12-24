@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test" style="border:1px solid #333;color:red;">hello</p>
+    <script>
+    window.onload=function(){
+     
+        var test=document.getElementById("test")
+        test.onclick=function(){
+            // var length=this.style.length;
+            // var color=this.style.getPropertyValue("color");
+        
+            // console.log(color)
+
+
+            console.log(this.style)
+            this.style.setProperty("color","blue")
+        }
+    }
+    </script>
+</body>
+</html>

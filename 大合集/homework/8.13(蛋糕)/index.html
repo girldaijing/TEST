@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<style>
+    *{margin:0;padding: 0}
+    .bg{
+        width: 1026px;
+        height: 770px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(50, 44, 36);
+    }
+    
+    .header>div{
+        height: 44px;
+        background: url("images/head-bg.png") repeat-x;
+        border-radius:6px 6px 0 0;
+        margin-top: 22px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        width: 1026px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .left-header{
+        width: 300px; 
+        margin-right: 3px;
+        
+    }
+    .right-header{
+        width:722px;
+        }
+    .left-header #pic1{
+        margin-left: 8px;
+        margin-top:3px;
+        float: left;
+        }
+    .left-header #pic2{
+        margin-left: 8px;
+      margin-top:13px;
+      float: left;
+    }
+    .left{
+        height:620px;
+        width: 300px;
+        position: relative;
+        float: left;
+        }
+    .left-nav{
+        height: 65px;
+        background: url("images/bg-1.png") repeat-x;
+        line-height: 30px;
+    }
+    
+    .left-nav span{
+        margin-left: 9px;
+        margin-right: 14px;
+        font-size: 12px;
+        color:#ecbd85;
+        }
+    .left-nav #pic3{ 
+        margin-left: 14px; 
+        vertical-align:middle;
+        }
+    .pay{
+        height: 43px;
+       background: url("images/bd-2.png") repeat-x;
+       line-height: 43px;
+       font-size: 15px;
+       color:#c7c3c1;
+       }
+     #pic4{
+         vertical-align:middle; 
+        margin-left: 14px;
+        margin-right: 9px;
+        }
+       .menu{
+           background-color: #f1ebdc;
+           }
+       .menu table{
+           position: relative;
+           width: 270px;
+           border-collapse: collapse;
+           font-size: 12px;
+           color:#803717;
+           text-align: center;
+           }
+           .img{
+               position: absolute;
+               margin-top: -75px;
+            
+           }
+        #list{
+            width: 95px;
+            padding-left: 20px;
+            text-align: left;
+        }
+       .menu td{
+           /* */
+          width: 265px;
+          height:42px;
+          border-bottom: 1px solid #c1ac97;
+          }
+          .list-1{
+            padding-left: 20px;
+            text-align: left;
+          }
+          #pic5{
+         vertical-align:middle;
+          } 
+          #line{font-weight: bold;}
+
+          .bg1{
+              height: 152px;
+              background: url("images/bd-3.png");
+              }
+           .price{
+               height:145px;
+               background-color: #f3e7bf;
+              
+               font-size: 17px;
+               color: #bb2f20;
+               font-weight: bold;
+                }  
+            .rental{
+                width: 215px;
+                height: 50px;
+                background-color: #f2f1d3;
+               margin-left: 20px;
+               line-height:  50px;
+               margin-top: 0px;
+                } 
+                .rental #word{margin-left:20px;}
+          #pic6{
+           vertical-align:middle;
+           } 
+        #pic7{
+           vertical-align:middle;
+            } 
+            input{
+                height: 20px;
+                border-radius: 10px;
+                width:220px;
+                margin-right: -5px;
+               font-size: 13px;
+              
+                }
+                #pic9{position: absolute;
+                right:28%;
+                bottom: 11.3%;
+                }
+        .bool{
+        width: 40px;
+        height: 512px;
+        background:rgba(107, 99, 81, .5);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+        }
+       .bool-nav{
+        width: 36px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        }
+        #pic8{
+        display: flex;
+        flex-direction: column;
+        margin-left: 4px;
+        }  
+        .right{
+            width: 724px;
+            height: 620px;
+            float: left;
+        }
+        .right-nav{
+            width: 650px;
+            height: 45px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        ul{
+            width: 550px; 
+            line-height: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            font-size: 14px;
+            margin-left:20px;
+            }
+         #pic10{
+             position: absolute;
+             right:28px;
+             bottom:0;
+             border-radius: 3px 3px 0 0;
+         }
+         .current{
+             color: #fff;
+             width: 105px;
+            height: 45px;
+            background-color: #bb2f20;
+            text-align: center;
+            border-radius: 3px 3px 0 0;
+         }
+          li{
+            color: #88491d;
+            width: 105px;
+            height: 45px;
+            background-color: #ecbd85;
+            text-align: center;
+            border-radius: 3px 3px 0 0;
+            }
+        .clamp{
+            width: 700px;
+            height: 555px;
+            background: url("images/jiazi2.png") repeat-y;
+            border-radius:10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content{
+            width: 600px;
+            height: 150px;
+            margin-left: 60px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            line-height: 30px;
+        }
+        .clamp p{
+            width: 585px;
+            height: 2px;
+            background-color: #bb2f20;
+            margin-left: 90px;
+            position: absolute;
+            right: 0;
+            bottom:80%;
+            }
+        .content>div{
+            border: 1px solid #bb2f20;;
+            width: 105px;
+            height: 68px;
+            margin-top: 70px;
+           margin-left:15px; 
+           font-size: 13px;
+           text-align: center;
+           
+          }
+          .content span{display: block;}
+          #num{color: #bb2f20;}
+          .cake1{
+              background: url("images/huodong.png") no-repeat left top;
+          }
+          .cake2{
+              display: none;
+          }
+         #word-1{
+              color: #fff;
+              font-size: 14px;
+              margin-left:10px;
+              width: 80px;
+              }
+           .control{
+            width: 600px;
+            height:45px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: absolute;
+            right:270px;
+            margin-top: -10px;
+           } 
+           .words{
+            width: 600px;
+            height:45px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: absolute;
+            right:268px;
+            margin-top: 38px;
+            font-size: 14px;
+           } 
+           .words>span{
+               width: 45px;
+               text-align: center;
+            } 
+          button{
+              width:100px;
+              height:45px;
+              background-color: #bb2f20;
+              position: absolute;
+              right: 180px;
+              color: #f2f1d3;
+              font-size: 18px;
+             
+              border: none;
+          }
+          #pic11{
+             vertical-align: middle;
+         }
+</style>
+</head>
+<body>
+    <div class="bg">
+
+        <div class="header">
+        <div class="left-header">
+            <img src="images/logo.png" id="pic1">
+            <img src="images/烘焙.png" id="pic2">
+        </div>
+        <div class="right-header"></div>
+       </div>
+
+       <div class="left">
+       <div class="left-nav">
+        <img src="images/position.png" id="pic3"><span>黑侠（关谷店）</span>
+        <br>
+          <img src="images/clock.png" id="pic3"><span>2016-04-06</span><span>10:23</span><span>AM</span> 
+       </div>
+       <div class="pay">
+            <img src="images/bill.png" id="pic4"><span>收支明细</span>
+       </div>
+       <div class="menu">
+           <table>
+               <tr id="line">
+                   <td id="list">品名</td>
+                   <td class="list-1">数量</td>
+                   <td>金额</td>
+                   <td>结算价</td>
+               </tr>
+               <tr>
+                    <td class="list-1">蛋挞</td>
+                    <td>5</td>
+                    <td>60</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td  class="list-1">全麦面包</td>
+                    <td>1</td>
+                    <td>10.5</td>
+                    <td>10.5</td>
+                </tr>
+                <tr>
+                    <td class="list-1">
+                      威风蛋糕
+                    </td>
+                    <td>1</td>
+                    <td>20</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td class="list-1">三明治</td>
+                    <td>5</td>
+                    <td>60</td>
+                    <td>60</td>
+                </tr>
+           </table>
+           <div class="img"><img src="images/give.png" alt=""></div>
+       </div>
+       <div class="bg1"></div>
+       <div class="price">
+            <p class="rental">
+                <span id="word">总额：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+                
+                <img src="images/renmingbi.png" id="pic6">
+                <span >122.5</span>
+            </p>
+            <input type="text" placeholder="搜索商品">
+            <img src="images/chenghao1.png" id="pic9">
+            <img src="images/search.png" id="pic7">
+
+       </div>
+       <div class="bool">
+          <div class="bool-nav">
+            <img src="images/chenghao.png" id="pic8">
+            <img src="images/add.png" id="pic8">
+            <img src="images/jianshao.png" id="pic8">
+            <img src="images/give1.png" id="pic8">
+            <img src="images/pen.png" id="pic8">
+            <img src="images/gua.png" id="pic8">
+            <img src="images/item.png" id="pic8">
+           </div> 
+       </div>
+    </div>
+
+    <div class="right">
+        <div class="right-nav">
+            <ul class="right-nav-1" >
+            <li class="current">威风蛋糕</li>
+            <li>蛋挞</li>
+            <li>全麦面包</li>
+            <li>戚风蛋糕</li>
+            <li>三明治</li>
+            </ul>
+            <img src="images/jiantou.png" id="pic10">
+        </div>
+        <P></P>
+        <div class="clamp">
+           <div class="content">
+               <P></P>
+               <div class="cake cake1">
+                <span id="num">0001</span>
+                <span>巧克力蛋糕</span>
+               </div>
+               <div class="cake cake2">
+                   <span id="num">0001</span>
+                   <span>巧克力蛋糕</span>
+               </div>
+               <div class="cake cake2">
+                <span id="num">0001</span>
+                <span>巧克力蛋糕</span>
+               </div>
+               <div class="cake cake2">
+                <span id="num">0001</span>
+                <span>巧克力蛋糕</span>
+               </div>
+               <div class="cake cake2">
+                <span id="num">0001</span>
+                <span>巧克力蛋糕</span>
+               </div>
+           </div>
+        </div>
+        
+    </div>
+     
+<script>
+    $(document).ready(function(){  
+        $('.right-nav-1>li').click(function(){
+            $(this).addClass("current").siblings().removeClass("current")
+            console.log($(this).index())
+            $(".content>div").eq($(this).index()).show(300).siblings().hide(300)
+        })
+
+    })
+</script>
+
+    
+
+    
+    <p id="word-1">会员信息：</p>
+    <div class="control">
+
+       <img src="images/设置.png" id="pic8">
+       <img src="images/信用卡购物.png" id="pic8">
+       <img src="images/huiyuan.png" id="pic8">
+       <img src="images/cuxiao.png" id="pic8">
+       <img src="images/预定.png" id="pic8">
+       <img src="images/jiaoban.png" id="pic8">
+       <img src="images/guadan.png" id="pic8">
+    </div>
+    <div class="words">
+        <span>管理台</span>
+        <span>购物卡</span>
+        <span>会员</span>
+        <span>促销</span>
+        <span>预定</span>
+        <span>交班</span>
+        <span>挂单</span>
+    </div>
+    <button><img src="images/收银中心.png" id="pic11">收银</button>
+    
+   </div>
+   
+</body>
+</html>

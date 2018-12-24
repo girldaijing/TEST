@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+</head>
+<body>
+    <div id="test">
+        <input type="text" @keyup.enter="submit">
+        <h3>{{title}}</h3>
+        <img v-bind:src="url" alt="">
+        <p>{{summary}}</p>
+    </div>
+    <script>
+    new Vue({
+        el:"#test",
+        data:{
+            title:"三体",
+            url:"https://img1.doubanio.com/view/subject/m/public/s2768378.jpg",
+            summary:"文化大革命如火如荼进行的同时。军方探寻外星文明的绝秘计划“红岸工程”取得了突破性进展。但在按下发射键的那一刻，历经劫难的叶文洁没有意识到，她彻底改变了人类的命运。地球文明向宇宙发出的第一声啼鸣，以太阳为中心，以光速向宇宙深处飞驰…… 四光年外，“三体文明”正苦苦挣扎——三颗无规则运行的太阳主导下的百余次毁灭与重生逼迫他们逃离母星。而恰在此时。他们接收到了地球发来的信息。在运用超技术锁死地球人的基础科学之后。三体人庞大的宇宙舰队开始向地球进发…… 人类的末日悄然来临。"
+        },
+        methods:{
+           submit(event){
+              
+               var self=this;
+               let value=event.target.value;
+               console.log(value);
+               let url=`https://douban.uieee.com/v2/book/search?q=${value}&count=1`;
+               $.ajax({
+                   url,
+                   type:"get",
+                   dataType:"jsonp",
+                   success(res){
+                       self.handleData(res);
+                       console.log(res);
+                   }
+               })
+           },
+           handleData(res){
+               let title=res.books[0].subtitle;
+               let url=res.books[0].images.small;
+               let summary=res.books[0].summary;
+               this.title=title;
+               this.url=url;
+               this.summary=summary;
+           }
+
+        }
+    })
+    </script>
+</body>
+</html>

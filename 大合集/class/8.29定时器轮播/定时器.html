@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+</head>
+<body>
+    <button id="btn">出现</button>
+    <button id="clear">清除</button>
+    <script>
+        var timer;
+        var btn=document.getElementById("btn");
+        var clear=document.getElementById("clear");
+        btn.onclick=function(){
+            timer=setInterval(function(){
+                alert(1)
+            },2000)
+        }
+        clear.onclick=function(){
+            clearInterval(timer);
+        }
+    </script>
+</body>
+</html>

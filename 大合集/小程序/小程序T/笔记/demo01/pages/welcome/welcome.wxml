@@ -1,0 +1,5 @@
+<view class="welcome">
+    <image src="/images/logo.png" ></image>
+    <text>hello 小程序</text>
+    <button bindtap = "handleClick">开启我的小程序之旅</button>
+</view>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <button id="add">添加</button>
+    <ul id="parent">
+
+    </ul>
+    <script>
+        var parent = document.getElementById("parent");
+        var txt = document.getElementById("txt");
+        var btn = document.getElementById("add");
+        btn.onclick = function(){
+            var value = txt.value;
+            var li = document.createElement("li");
+            li.innerHTML = value;
+            parent.appendChild(li);
+        }
+    </script>
+</body>
+</html>

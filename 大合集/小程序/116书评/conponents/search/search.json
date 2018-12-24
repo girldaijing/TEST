@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-book":"/conponents/bookitem/book-item",
+    "v-tag":"/conponents/comment/comment",
+    "v-loading":"/conponents/loading/loading"
+  }
+}

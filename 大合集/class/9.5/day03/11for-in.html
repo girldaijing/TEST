@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            name:"cheng",
+            age:18,
+            sex:"male"
+        }
+        var  arr = [1,2,34,5];
+        // 如果对象的属性值是变量,只能用[]的方式读取属性值
+        for(let key in obj){
+            // console.log(obj[key]);
+        }
+        for(let key in arr){
+            // console.log(key);
+            // console.log(arr[key])
+        }
+        /* of */
+        for(let value of arr){
+            console.log(value);
+        }
+    </script>
+</body>
+</html>

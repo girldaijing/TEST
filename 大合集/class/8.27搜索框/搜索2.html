@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .parent{
+        width: 500px;
+        height: 50px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .parent>:first-child{
+        width: 400px;
+        height: 50px;
+        position: absolute;
+        border: 1px solid rgb(9, 94, 221);
+    }
+    .parent>:last-child{
+        width:98px;
+        height: 54px;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        text-align: center;
+        background-color: rgb(9, 94, 221);
+        border: none;
+        color: aliceblue;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <form class="parent">
+        <input type="text">
+        <button>百度一下</button>
+    </form>
+</body>
+</html>

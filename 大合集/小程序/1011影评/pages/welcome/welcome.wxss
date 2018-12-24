@@ -1,0 +1,33 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+  background: #B3d4db;
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 200rpx;
+}
+h3{
+  margin-top: 70rpx;
+}
+button{
+  width: 300rpx;
+  height: 90rpx;
+  font-size: 25rpx;
+  line-height: 90rpx;
+  border: 1px solid #405F80;
+  background-color: #B3d4db;
+  margin-top: 70rpx;
+  font-weight: bolder;
+}
+.button-hover{
+  color: aliceblue;
+  background-color: rgb(178, 131, 240);
+}

@@ -1,0 +1,17 @@
+{
+  "pages":[
+     
+     "pages/login/login",  
+     "pages/user/user"
+  ],
+
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "用户登录",
+    "navigationBarTextStyle":"black"
+  }
+
+ 
+}

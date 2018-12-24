@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/sHover.min.js"></script>
+    <style>
+        *{margin:0;padding:0}
+        .sHoverItem {
+            overflow: hidden;
+            width: 280px;
+            height:180px;
+            border: 1px solid #333;
+        }
+       
+
+        .sIntro{
+            
+            background: rgba(155, 150, 150, 0.781);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="item1" class="sHoverItem">
+        <img id="img1" src="images/01.jpg">
+        <span id="intro1" class="sIntro">
+            <h2>Flowers</h2>
+            <p> Flowers are so inconsistent! </p>
+            <button>inconsistent</button>
+        </span>
+    </div>
+   
+    <script>
+        var a = new sHover("sHoverItem", "sIntro");
+        a.set({
+            slideSpeed: 5,
+            opacityChange: true,
+            opacity: 80
+        });
+    </script>
+</body>
+
+</html>

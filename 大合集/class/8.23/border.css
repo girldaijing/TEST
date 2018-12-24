@@ -1,0 +1,24 @@
+.parent{
+    width: 1000px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+.parent>div{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.parent>div:not(:last-child)::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: blueviolet;
+}

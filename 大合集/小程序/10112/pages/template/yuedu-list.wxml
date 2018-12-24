@@ -1,0 +1,14 @@
+<template name="yueduList">
+    <view class="yuedu-list">
+        <view>
+             <image src="{{avatar}}" class="img"></image>
+            <p class="word">{{date}}</p>
+        </view>
+        <view>{{content}}</view>
+        <image src="{{headImgSrc}}" ></image>
+       <view>
+             <image src="/images/信息.png" class="img"></image><p class="word">{{reading}}</p>
+             <image src="/images/眼睛.png" class="img"></image><p class="word">{{collection}}</p>
+       </view>
+</view>
+</template>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test" >hello world</div>
+    <script>
+        /* if语句中()的值,接收boolean类型,如果不是boolean,会强转为boolean
+        */
+        var age = 20;
+        if(age){
+            alert("能上网")
+        }
+        var test = document.getElementsByClassName("test")[0];
+        console.log(test);
+        if(test){
+            test.style.color="red"
+        }else{
+            console.log("test没有被获取")
+        }
+    </script>
+</body>
+</html>

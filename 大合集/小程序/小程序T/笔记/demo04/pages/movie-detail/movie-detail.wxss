@@ -1,0 +1,5 @@
+/* pages/movie-detail/movie-detail.wxss */
+image{
+    width:300rpx;
+    height:400rpx;
+}

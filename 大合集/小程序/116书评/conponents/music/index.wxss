@@ -1,0 +1,44 @@
+/* conponents/music/index.wxss */
+.movie{
+    height: 278px;
+    display: flex;
+    flex-direction: column;
+}
+.typepic{
+    width: 23px;
+    height:71px;
+    position: absolute;
+    left: 97px;
+    top: 207px;
+}
+.backpic{
+    width: 200px !important;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.words{
+    margin-top: 57px;
+    text-align: center;
+}
+.plays{
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+}
+.rotate{
+    animation: rotate 12s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}

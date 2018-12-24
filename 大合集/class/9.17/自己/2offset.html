@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script> -->
+    <style>
+        *{margin: 0;padding: 0}
+    #granpa{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 100px;
+        margin-top: 100px;
+        background-color: brown;
+    }
+    #parent{
+        width: 200px;
+        height: 200px;
+        background: blue;
+        top: 50px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    #child{
+        width: 100px;
+        height: 100px;
+        background: seagreen;
+        position: absolute;
+        margin-top: 50px;
+        left: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div id="granpa">
+        <div id="parent">
+            <div id="child">
+
+            </div>
+        </div>
+    </div>
+    <!-- $(element).offset().top
+     获取一个元素距离顶部的高度-->
+     <script>
+    //  $(()=>{
+    //      var top=$("#child").offset()
+    //      console.log(top)
+    //  })
+
+
+
+
+     window.onload=function(){
+         function getTop(element){
+             var realTop=element.offsetTop
+             var parent=element.offsetParent;
+             while(parent!==null){
+                 realTop+=parent.offsetTop;
+                 parent=parent.offsetParent;
+             }
+             return realTop;
+         }
+         var child=document.getElementById("child")
+         var top=getTop(child)
+         console.log(top)
+     }
+     </script>
+</body>
+</html>

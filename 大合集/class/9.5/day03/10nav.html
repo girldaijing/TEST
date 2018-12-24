@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0}
+        ul{
+            list-style: none;
+            line-height: 50px;
+            background: #5F5F5F;
+            font-size: 0;
+        }
+        li{display: inline-block;width:100px;text-align: center;cursor: pointer;color:#fff;
+        font-size: 16px;vertical-align:bottom}
+        .current{background: #4CAF50}
+        li:hover{background:black}
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="current">HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        window.onload = function(){
+            
+            var lis = document.getElementsByTagName("li");
+            for(let i=0;i<lis.length;i++){
+                lis[i].onclick = function(){
+
+                    for(let i=0;i<lis.length;i++){
+                        lis[i].style.backgroundColor="#5F5F5F"
+                    }
+
+                    this.style.backgroundColor = "#4CAF50"
+                    
+                }
+            }
+            // lis[0].onclick
+            // lis[1].onclick
+            // lis[2].onclick
+        }
+        
+
+    </script>
+</body>
+</html>

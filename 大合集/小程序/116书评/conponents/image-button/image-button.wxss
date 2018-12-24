@@ -1,0 +1,7 @@
+/* conponents/image-button/image-button.wxss */
+button{
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;  
+}

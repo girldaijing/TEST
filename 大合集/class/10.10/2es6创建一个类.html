@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Person{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        sayName(){
+            console.log(this.name);
+        }
+    }
+    let dai=new Person("dai",18);
+    console.log(dai);
+    // hasOwnProperty可以判断一个属性是否为私有属性
+    console.log(dai.hasOwnProperty("sayName"));
+    console.log(dai.hasOwnProperty("name"));
+    console.log("sayName" in di);//判断是否有这个属性，不能区分是公有还是私有
+    </script>
+    
+</body>
+</html>

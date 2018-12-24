@@ -1,0 +1,5 @@
+<view class="welcome">
+<image src="../img/图层-1---Assistor.png" mode="scaleToFill|aspectFit|aspectFill|widthFix" binderror="" bindload=""></image>
+<text>hello,浮生</text>
+<button bindtap="handleClick">开启我的小程序</button>
+</view>

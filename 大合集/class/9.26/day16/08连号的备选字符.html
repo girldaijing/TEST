@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        连号的备选字符集
+        [0-9] 一位数字
+        [a-z] 一位小写字母
+        [A-Z] 一位大写字母
+        [0-9a-zA-Z] 一位数字或字母
+         */
+        var reg = /[0-9]/g;
+        var reg01 = /[a-zA-Z]/g;
+        var reg02 = /[0-9a-zA-Z]/g;
+        var str = "helloJKLDJSFJL321313219767和";
+        console.log(str.replace(reg,"*"));//helloJKLDJSFJL************和
+        console.log(str.replace(reg01,"*"));//**************321313219767和
+        console.log(str.replace(reg02,"*"));//**************************和
+    </script>
+</body>
+</html>

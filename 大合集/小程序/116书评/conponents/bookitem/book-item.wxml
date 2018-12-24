@@ -1,0 +1,9 @@
+<!--conponents/bookitem/book-item.wxml-->
+<view class="book" bind:tap="onBook">
+    <image src="{{book.image}}" class="back"></image>
+    <view class="book-detail">
+        <text class="title">{{book.title}}</text>
+        <text class="author">{{book.author}}</text>
+        <text class="fav">{{book.fav_nums}} 短评</text>
+    </view>
+</view>

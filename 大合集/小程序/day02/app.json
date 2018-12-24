@@ -1,0 +1,10 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#B3D4DB",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "小程序"
+  }
+}

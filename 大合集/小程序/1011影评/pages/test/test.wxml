@@ -1,0 +1,18 @@
+<!--pages/test/test.wxml-->
+
+<!-- <scroll-view scroll-x="true" scroll-y="" class="scroll">
+    <image src="/images/beishang.png" catchtap="click"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+    <image src="/images/beishang.png"></image>
+</scroll-view> -->
+<view>
+<image src="{{isEmpty?'/images/beishang.png':imgUrl}}" catchtap="click" mode="aspectFill"></image>
+</view>
+<view>世间种种，最后终必，终必成空</view>

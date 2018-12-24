@@ -1,0 +1,14 @@
+/* pages/mine/mine.wxss */
+page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   text-align: center;
+}
+image{
+    width: 300rpx;
+    height: 300rpx;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}

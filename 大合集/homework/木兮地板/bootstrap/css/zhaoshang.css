@@ -1,0 +1,70 @@
+@import"command.css";
+.pic  img{
+    width: 100%;
+}
+.display{
+    width: 80%;
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.display .nav{
+    height:40px;
+    width: 150px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background: rgb(45,174,54);
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+ 
+.display .line{
+    height: 1px;
+    width: 1065px;
+    background-color: #2DAE36;
+    vertical-align: bottom;
+}
+
+.display span{
+    font-size:24px;
+}
+
+.align-1{
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+    line-height: 30px;
+}
+
+.align-2{
+    text-align: left;
+    line-height: 30px;
+    font-size: 14px;
+   
+}
+/*#word{
+    position: absolute;
+    bottom: 20%;
+    right:15%;
+    color: #2dae36;
+    font-size: 18px;
+    margin-top: 10%;
+}*/
+
+.middle{
+  border-top: 1px dotted #2dae36;
+  border-bottom: 1px dotted #2dae36;
+}
+
+h4{
+    color: #2dae36;
+}
+  
+
+.display p{
+    text-indent: 30px;
+    line-height:25px;
+}

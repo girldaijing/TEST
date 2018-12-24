@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 200px;
+    height: 50px;       /*导航条高度设置成50px*/
+    margin: 40px;
+    overflow: hidden;    /*超出导航条部分隐藏*/
+    cursor: pointer;
+    transition: all 0.35s;    /*设置动画时间*/
+}
+
+.box ul {
+    list-style: none;
+    /* padding: 0; */
+}
+
+.box ul li {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.box:hover{
+    height: 250px;
+}
+
+.box ul:hover :first-child {
+    background: gray;
+}
+
+.box ul li:hover {
+    background: gray;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>this is 1</li>
+            <li>this is 2</li>
+            <li>this is 3</li>
+            <li>this is 4</li>
+            <li>this is 5</li>
+        </ul>
+        </div>
+</body>
+</html>

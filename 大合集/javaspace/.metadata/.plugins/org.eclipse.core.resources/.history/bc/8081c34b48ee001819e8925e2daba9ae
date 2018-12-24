@@ -1,0 +1,13 @@
+package com.igeek.day01;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     double x=3.14;
+     byte y=10;
+     float result=(float)(x+y);
+     System.out.println(result);
+	}
+
+}

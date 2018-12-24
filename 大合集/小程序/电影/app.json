@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/read/read",
+     "pages/read/read-detail/read-detail",
+    "pages/movie/movie-more/movie-more",
+    "pages/movie/movie-detail/movie-detail",
+    "pages/movie/search/search",
+    "pages/map/map",
+    
+    "pages/mine/mine"
+   
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/read/read",
+      "text": "新闻",
+      "iconPath": "images/tab/yuedu.png",
+      "selectedIconPath": "images/tab/yuedu_hl.png"
+    },
+    {
+      "pagePath": "pages/map/map",
+      "text": "地图",
+      "iconPath": "images/tab/map.png",
+      "selectedIconPath": "images/tab/map_hl.png"
+    },
+    {
+      "pagePath": "pages/movie/movie",
+      "text": "电影",
+      "iconPath": "images/tab/dianying.png",
+      "selectedIconPath": "images/tab/dianying_hl.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "用户",
+      "iconPath": "images/tab/注册头像.png",
+      "selectedIconPath": "images/tab/注册头像_h1.png"
+    }]
+  }
+}

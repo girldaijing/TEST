@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <script>
+        /* 
+        onchange  输入框的内容发生改变时触发
+        input输入框有value属性,可以读写
+         */
+        var txt = document.getElementById("txt");
+        txt.onchange= function(){
+            this.value = "change"
+        }
+    </script>
+</body>
+</html>

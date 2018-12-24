@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <script>
+        function getData(url){
+            const promise=new Promise((resolve,reject)=>{
+                $.ajax({
+                    url,
+                    dataType:"jsonp",
+                    success:res=>{
+                        resolve(res)
+                    },
+                    error:err=>{
+                        reject(err)
+                    }
+                })
+            })
+            return promise;
+        }
+
+        getData("https://api.douban.com/v2/books/search?q=javascipt&count=1").then(res=>{
+            let id=res.book[0].id;
+            return getData(`https://douban.uieee.com/v2/books/${id}`)
+        }).then(res=>{
+            console.log(res)
+        })
+        </script>
+</body>
+</html>

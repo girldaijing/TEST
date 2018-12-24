@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="email">
+    <script>
+    var reg=/^\w+@[0-9a-z]+\.[a-z]+$/i;
+    var email=document.getElementById("email")
+    email.onchange=function(){
+        if(!reg.test(this.value)){
+            alert("邮箱不符合规则")
+        }
+    }
+    </script>
+</body>
+</html>

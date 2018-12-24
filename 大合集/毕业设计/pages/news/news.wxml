@@ -1,0 +1,7 @@
+<!--pages/news/news.wxml-->
+
+<view class="container">
+    <block wx:for="{{news}}" wx:key="index">
+        <v-newsitem image="{{item.image}}" title="{{item.title}}" source="{{item.source}}" date="{{item.date}}"></v-newsitem>
+    </block>
+</view>

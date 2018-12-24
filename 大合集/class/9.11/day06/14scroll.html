@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            height:2000px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /* 
+        onscroll-->窗口滚动的时候触发
+        document.documentElement.scrollTop滚动条距离顶部的高度
+         */
+        window.onscroll = function(){
+            // var height = document.documentElement.scrollTop;
+            var height = window.scrollY;
+            console.log(height);
+        }
+    </script>
+</body>
+</html>

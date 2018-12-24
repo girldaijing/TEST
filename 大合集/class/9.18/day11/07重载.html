@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        重载:函数根据传入的参数不同动态决定,调用那种方法
+        js不支持重载
+        可以使用arguments对象去模拟重载
+         */
+         /* 
+         function go(a){
+             console.log(a);
+         }
+         function go(a,b){
+             console.log(a,b)
+         }
+          */
+        function go(){
+            if(arguments.length == 1){
+                console.log(arguments[0])
+            }else if(arguments.length == 2){
+                console.log(arguments[0]+arguments[1])
+            }
+        }
+        go(1);//1
+        go(1,2);//3
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<!--components/success/index.wxml-->
+<icon type="{{src?'success':'cancel'}}" size="33" color="#44f" bindtap="handleclick" ></icon>
+<text>
+    {{param}}
+</text>

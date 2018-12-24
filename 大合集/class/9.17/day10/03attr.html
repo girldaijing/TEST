@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <p id="test" class="one">hello world</p>
+    <script>
+        // getAttribute -- 设置属性
+        // removeAttribute -- 移除属性
+        var test = document.getElementById("test");
+        test.onclick = function(){
+            this.removeAttribute("class");
+        }
+    </script>
+</body>
+</html>

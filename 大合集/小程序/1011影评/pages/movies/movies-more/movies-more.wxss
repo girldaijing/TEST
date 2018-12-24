@@ -1,0 +1,7 @@
+/* pages/movies/movies-more/movies-more.wxss */
+@import "../movies-item/movies-item-template";
+.more-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

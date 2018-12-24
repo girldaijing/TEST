@@ -1,0 +1,24 @@
+
+<import src="/pages/template/yuedu-list"></import> <!--引用阅读页面-->
+
+<view >
+        <!--轮播-->
+   <swiper  autoplay="true"  interval="2000" duration="1000" indicator-dots="true">
+           <block wx:for="{{imgUrl}}" wx:key="index">
+                   <swiper-item>
+                            <image src="{{item.url}}" class="slide-image"  data-id="{{item.id}}" catchtap="jump"></image>
+                  </swiper-item>
+          </block>
+   </swiper>
+  
+  
+    <block wx:for="{{postList}}" wx:key="index">
+            <view catchtap="handleclick" data-id="{{item.postId}}">
+                      <template is="yueduList" data="{{...item}}" ></template> 
+            </view>
+     
+    </block>
+</view>
+
+
+

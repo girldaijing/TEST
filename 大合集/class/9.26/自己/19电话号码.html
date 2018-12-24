@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="phone">
+    <script>
+    var reg=/^1[3456789]\d{9}$/
+    var phone=document.getElementById("phone")
+    phone.onchange=function(){
+        if(!reg.test(this.value)){
+            alert("请输入11位数字电话号码")
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

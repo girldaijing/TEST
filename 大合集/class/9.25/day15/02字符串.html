@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 字符串的方法不能改变原来的值 */
+        // length-->获取字符串的长度
+        var str = "hello world";
+        console.log(str.length)
+        // concat-->增加的方法
+        var newStr = str.concat(123);
+        console.log(newStr)
+        // charAt(index);
+        console.log(str.charAt(0));
+        // indexOf;
+        console.log(str.indexOf("d"));
+        /*
+        lastIndexOf(value))-->  从后开始查找
+        */
+        console.log(str.lastIndexOf("l"));
+    </script>
+</body>
+</html>

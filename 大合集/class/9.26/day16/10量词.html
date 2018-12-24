@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        6-12
+        395775347
+        量词:规定字符出现的次数
+        {m,n} -->至少m个，最多n个
+        {m}-->必须是m个
+        {m,}-->至少m个
+         */
+        var  reg = /\d{3,6}/g;
+        var reg01 =/\d{3}/g;
+        var reg02 = /\d{1,}/g
+        var str = "2121jfsdjfs123jfd12";
+        console.log(str.replace(reg,"**"))//**jfsdjfs**jfd12
+        console.log(str.replace(reg01,"**"))//**1jfsdjfs**jfd12
+        console.log(str.replace(reg02,"**"))//**jfsdjfs**jfd**
+    </script>
+</body>
+</html>

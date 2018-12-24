@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list"
+   
+  ],
+
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+   
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "text",
+      "iconPath": "images/yuedu.png",
+      "selectedIconPath": "images/yuedu_hl.png"
+    },
+    {
+      "pagePath": "pages/list/list",
+      "text": "text",
+      "iconPath": "images/yuedu.png",
+      "selectedIconPath": "images/yuedu_hl.png"
+    }]
+  }
+}

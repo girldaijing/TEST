@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // clearTimeout()-->清除超时调用
+        var num = 0;
+        var max = 3;
+        var timer;
+        function go() {
+            num++;
+            alert(num);
+            if (num > max) {
+                clearTimeout(timer);
+            } else {
+                timer = setTimeout(go, 1000);
+            }
+        }
+        go();
+    </script>
+</body>
+
+</html>

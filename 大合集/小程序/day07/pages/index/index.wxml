@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<import src="/template/movie-item"></import>
+<loading hidden="{{show}}"></loading>
+<view class="container">
+  <block wx:for="{{data}}" wx:for-item="item" wx:key="index">
+       <view class="item" bind:tap="handleclick" data-id="{{item.id}}">
+            <template is="movieItem" data="{{...item}}"></template>
+       </view>
+  </block>
+</view>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+
+</head>
+<body>
+    <body>
+        <div id="app">
+            <label>
+                <!-- 单选框 -->
+                男
+                <input v-model="sex" value="male" type="radio">
+                <!-- 男  复选
+                <input v-model="sex" value="male" type="checkbox"> -->
+            </label>
+            <label>
+                <!-- 单选框 -->
+                女
+                <input v-model="sex" value="female" type="radio">
+                <!-- 女
+                <input v-model="sex" value="female" type="checkbox"> -->
+            </label>
+            <br>
+            {{sex}} 
+        </div>
+        <script>
+            new Vue({
+                el: "#app",
+                data:{
+                    // 单选框
+                    sex: 'female'
+                    // 复选框 可以添加默认值
+                    // sex: []
+                }
+            })
+        </script>
+    </body>
+</body>
+</html>

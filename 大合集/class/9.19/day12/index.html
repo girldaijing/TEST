@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0}
+        img {
+            width: 230px;
+            padding: 5px;
+            vertical-align: bottom;
+        }
+
+        .content {
+            width:240px;
+            border:1px solid rgba(51, 51, 51, 0.1);
+            float: left;
+            position: relative;
+
+        }
+
+        #container {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="content">
+            <img src="images/01.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/02.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/03.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/04.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/05.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/06.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/07.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/08.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/09.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/10.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/11.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/12.jpg" alt="">
+        </div>
+        <div class="content">
+                <img src="images/01.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/02.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/03.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/04.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/05.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/06.jpg" alt="">
+            </div>
+    </div>
+    <script>
+        window.onload = function () {
+            placeImg();
+            function placeImg() {
+                var container = document.getElementById("container");
+                var contents = document.getElementsByClassName("content");
+                var ww = window.innerWidth;
+                var cw = contents[0].offsetWidth;
+                //1.一排能放置几张图片
+                var num = Math.floor(ww / cw);
+                container.style.width = num*cw+"px";
+                // 2.将第一排的height放入一个数组
+                var content_arr = Array.prototype.slice.call(contents);
+                var arr_height = [];
+                content_arr.forEach((element, index) => {
+                    if (index < num) {
+                        arr_height.push(element.offsetHeight)
+                    } else {
+                        // 3.剩下图片放置的位置
+                        /* 
+                        绝对定位,top=数组中最小高度,left为最小位置的offsetLeft值
+                         */
+                        console.log(index);
+                        var minHeight = Math.min(...arr_height);
+                        var minIndex = arr_height.indexOf(minHeight);
+                        var offsetLeft = content_arr[minIndex].offsetLeft;
+                        element.style.position = "absolute";
+                        element.style.top = minHeight + "px";
+                        element.style.left = offsetLeft + "px";
+                        //4.数组高度变化,重新设置数组
+                        arr_height[minIndex] += element.offsetHeight;
+                    }
+                })
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>hellow world</p>
+    <p id="test">hellow world</p>
+    <p>hellow world</p>
+    <p>hellow world</p>
+    <script>
+        // nextSibling;
+        /* 
+        nextSibling -->下一个兄弟节点  ie9以下识别为元素节点
+        nextElementSibling -->下一个兄弟元素节点
+         */
+        var test = document.getElementById("test");
+        var sibling =  test.nextElementSibling;
+        console.log(sibling);
+    </script>
+</body>
+</html>

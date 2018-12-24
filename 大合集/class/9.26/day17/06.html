@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <textarea  id="txt" cols="30" rows="10"></textarea>
+    <button id="btn">过滤</button>
+    <textarea  id="filter" cols="30" rows="10"></textarea>
+    <script>
+        var reg = /(<[^<>]*>)|(&nbsp;*)/g
+        var txt = document.getElementById("txt");
+        var filter = document.getElementById("filter");
+        var btn = document.getElementById("btn");
+        btn.onclick = function(){
+            var txtValue = txt.value;
+            var newValue = txtValue.replace(reg,"");
+            filter.value = newValue;
+        }
+    </script>
+</body>
+</html>

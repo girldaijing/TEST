@@ -1,0 +1,16 @@
+<template name="readList">
+    <view class="readList-head">
+        <image src="{{avatar}}"></image>
+        <text>{{date}}</text>
+    </view>
+    <view class="readList-middle">
+        <p>{{content}}</p>
+        <image src="{{imgSrc}}"></image>
+    </view>
+    <view class="readList-foot">
+        <image src="/images/icon/chat1.png"></image>
+        <p>{{reading}}</p>
+        <image src="/images/icon/view.png"></image>
+        <p>{{collection}}</p>
+    </view>
+</template>

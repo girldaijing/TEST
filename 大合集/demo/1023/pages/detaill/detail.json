@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-num":"/components/movie-item/index"
+    }
+}

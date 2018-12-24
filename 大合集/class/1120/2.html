@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+      var arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    //   var pages=[]
+    //   arr.forEach((e,index)=>{
+    //       var page=Math.floor(index/3)//下取整
+    //       console.log(pages[page])
+    //       if(!pages[page]){
+    //           pages[page]=[]
+    //       }
+    //       pages[page].push(e)
+    //   })
+    //   console.log(pages)
+
+
+    //   function slice_arr(arr,len){
+    //       var arr_len=arr.length;
+    //       var pages=[]
+    //       for (i=0;i<arr_len;i+=len){
+    //           console.log(i)
+    //           pages.push(arr.slice(i,len+i))
+    //       }
+    //       return pages
+    //   }
+    //   var newArr=slice_arr(arr,3);
+    //   console.log(newArr)
+
+
+
+    //   var newArr=[]
+    //   for(let i=0;i<arr.length/3;i++){
+    //       newArr[i]=arr.slice(3*i,(3*(i+1)))
+    //   }
+    //   console.log(newArr)
+
+
+    var result=[]
+    for(var i=0;i<arr.length;i+=3){
+        var add=arr.slice(i,i+3)
+        result.push(add)
+    }
+    console.log(result)
+    </script>
+</body>
+
+</html>

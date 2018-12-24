@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{text-decoration: none;}
+			body{
+				background: rgb(236, 236, 236);
+			}
+			.box{
+				margin-top: 20px;
+				margin-left: 300px;
+				width: 300px;
+				height: 430px;
+				background:white;
+				text-align: center;
+				position: relative;
+                }
+                .box:hover{
+                	box-shadow: 0 0 15px #999999 inset;
+                }
+                .box:hover .shoping{
+                	display: block;
+                }
+                .box:hover .price{
+                	display: none;
+                }
+			.box>img{
+				width: 206px;
+			    height: 206px;
+			    margin: 50px auto 30px;
+			}
+			.box>h2{
+				font-size: 16px;
+			    font-weight: normal;
+			    margin: 0px;
+			    padding: 0px;
+			}
+			.box>p{
+				font-size: 12px;
+			    color: #B2B2B2;
+			    line-height: 20px;
+			}
+			.box .finder{
+				    width: 100%;
+				    position: absolute;
+				    z-index: 22;
+				    bottom: 75px;
+				    
+			}
+			.finder>span{
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				border-radius: 50px;
+				background: tomato;
+				margin: 0 5px;
+			}
+			.finder .ff{
+				box-shadow: 0 0 1px 2px #999999;
+			}
+			.finder>span:hover{
+				box-shadow: 0 0 1px 2px #999999;
+			}
+			.price{
+				    position: absolute;
+				    bottom: 8%;
+				    width: 100%;
+				    left: 0;
+				    font-size: 18px;
+				    color: #DE4037;
+				    font-family: arial;
+			}
+			.shoping{
+				        width: 100%;
+					    position: absolute;
+					    bottom: 9%;			    
+					    z-index: 9;
+					    height: 30px;
+					    display: none;
+			}
+			.details{
+				background: #f9f9f9;
+    			color: #646464;
+    			border: 1px solid #E6E6E6;
+			    font-size: 14px;
+			    width: 90px;
+			    height: 28px;
+			    display: inline-block;
+			    line-height: 28px;
+			    border-radius: 5px;
+			}
+			.details:hover{
+				background: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		  <img src="img/5-1.jpg" />	
+		  <h2>Smartisan 坚果自拍杆</h2>
+		  <p>通用 3.5 mm 接口、航空铝合金伸缩杆</p>
+		  <div class="finder"><span class="ff"></span> <span></span></div>
+		  <span class="price">￥69.00</span>
+		  <div class="shoping">
+		  	<a href="javascript: ;" class="details">查看详情</a>
+		  	<a href="javascript: ;" class="details">查看详情</a>
+		  </div>
+		</div>
+		
+	</body>
+</html>

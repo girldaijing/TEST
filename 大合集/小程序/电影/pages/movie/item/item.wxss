@@ -1,0 +1,23 @@
+@import"../star/star";
+.item .evaluate{
+    display: flex;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.evaluate{
+    align-items: center;
+}
+.evaluate text{
+    margin-left: 10rpx;
+}
+.item>.banner{
+    width: 230rpx;
+    height: 300rpx;
+}
+.head{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

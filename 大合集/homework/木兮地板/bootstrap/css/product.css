@@ -1,0 +1,32 @@
+@import"command.css";
+.carousel-indicators .active{
+    background-color: #2DAE36;
+}
+.nav-tabs{
+    width: 80%;
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+ 
+
+}
+
+.nav-tabs>li{
+    font-size: 16px;
+}
+
+.photo2{
+    display: none;
+}
+
+
+.content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content img{
+    width: 100%;
+    margin-top: 20px;
+}
+

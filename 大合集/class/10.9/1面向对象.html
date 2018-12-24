@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // this指向实例化对象
+    function Person(name,age){
+        this.name=name;
+        this.age=age;
+        this.eat=function(){
+            console.log("我喜欢吃")
+        }
+    }
+    var cheng = new Person("cheng",30);
+    console.log(cheng);
+    console.log(cheng.eat());
+    console.log(cheng.__proto__==Person.prototype);
+    console.log(Person.prototype);
+    console.log(cheng.toString());
+    </script>
+</body>
+</html>

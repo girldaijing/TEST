@@ -1,0 +1,50 @@
+
+      @import"command.css";
+        .carousel-indicators .active{
+            background-color: #2DAE36;
+        }
+
+       .show{
+           margin-top: 20px;
+           width:80%;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+        }
+       .show .text-success{
+           font-size: 20px;font-weight: bold;
+        }
+
+        .display{
+            width: 80%;
+            margin: 20px 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .display .nav{
+            height:40px;
+            width: 150px;
+            border-top-left-radius:10px;
+            border-bottom-right-radius:10px;
+            background: rgb(45,174,54);
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+        .display img{
+            width:100%;
+            margin-top:20px;
+        }
+        .display .line{
+            height: 1px;
+            width: 1065px;
+            background-color: #2DAE36;
+            vertical-align: bottom;
+        }
+        .active{
+           
+            border: 1px solid #333;
+            border-bottom: none;
+        }
+     

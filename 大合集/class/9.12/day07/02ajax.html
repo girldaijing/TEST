@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>演示异步操作的实际运用</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <script>
+        /* 
+        同步:一段时间里只能干一件事情
+        异步:一段时间里可以干多件事情
+         */
+        function test(){
+            alert(1);
+            $.ajax({
+                url:"json/a.txt",
+                dataType:"json",
+                success(data){
+                    alert(data.age)
+                },
+                error(err){
+                    alert(err.status)
+                }
+            });
+            alert(2);
+        }
+        test();
+    </script>
+</body>
+</html>

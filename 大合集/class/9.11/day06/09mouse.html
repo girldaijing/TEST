@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+</head>
+<body>
+    <p id="test" class="animated">hello world</p>
+    <script>
+        /* 
+        onmouseover--鼠标移入
+        onmouseout--鼠标移除
+         */
+        var test = document.getElementById("test");
+        test.onmouseover = function(){
+            this.classList.add("shake");
+        }
+        test.onmouseout = function(){
+            this.classList.remove("shake");
+        }
+    </script>
+</body>
+</html>

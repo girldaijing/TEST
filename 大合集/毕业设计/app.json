@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/news/news",
+    "pages/movies/movies",
+    "pages/books/books",
+    "pages/movies/more/more"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "black",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/news/news",
+      "text": "新闻",
+      "iconPath": "/images/news.png",
+      "selectedIconPath": "/images/news_hl.png"
+    },
+    {
+      "pagePath": "pages/movies/movies",
+      "text": "电影",
+      "iconPath": "/images/dianying.png",
+      "selectedIconPath": "/images/dianying_hl.png"
+    },
+    {
+      "pagePath": "pages/books/books",
+      "text": "书籍",
+      "iconPath": "/images/book.png",
+      "selectedIconPath": "/images/book_hl.png"
+    }]
+  }
+}

@@ -1,0 +1,12 @@
+
+<!-- <swiper indicator-dots="{{true}}" autoplay="{{true}}" 
+interval="3000" duration="1000">
+    <block wx:for="{{imgUrl}}" wx:key="index">
+        <swiper-item>
+            <image src="{{item.src}}"></image>
+        </swiper-item>
+    </block>
+</swiper> -->
+<import src="/pages/template/banner.wxml"></import>
+<template is="banner" data="{{imgUrl}}"></template>
+<button bindtap = "toggleUser">user</button>

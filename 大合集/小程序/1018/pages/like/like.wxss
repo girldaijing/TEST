@@ -1,0 +1,5 @@
+/* pages/like/like.wxss */
+image{
+    width: 64rpx;
+    height: 58rpx;
+}

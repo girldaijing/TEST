@@ -1,0 +1,24 @@
+
+//@mixin ---定义公共样式
+@mixin aa($w:100px,$h:100px) {
+  width: $w;
+  height: $h;
+    
+}
+.one{
+    @include aa;
+    background: blueviolet;
+}
+.two{
+    @include aa(200px,200px);
+    background: brown;
+}
+// @extend----继承
+.head{
+    width: 100px;
+    height: 100px;
+    color: aquamarine;
+}
+.footer{
+    @extend .head;
+}

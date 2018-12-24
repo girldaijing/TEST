@@ -1,0 +1,13 @@
+
+<view class="index-container">
+   <image  src="/image/timg.jpg" class="pic"></image>
+   <image src="/image/logo.png" class="logo"></image>
+   <view class="nickname">
+      {{username}}
+   </view>
+    <ul class="list">
+        <li>修改密码</li>
+        <li>关于</li>
+        <li>设置</li>
+    </ul>
+</view>

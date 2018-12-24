@@ -1,0 +1,21 @@
+/* conponents/like/love.wxss */
+.icon{
+    width: 15px;
+    height: 15px;
+
+}
+/* page{
+    position: relative;
+} */
+.love{
+    display: inline-flex;
+ 
+}
+.love text{
+    font-size: 12px;
+    color:#666;
+    position: relative;
+    top:0px;
+    margin-left: 10px;
+    
+}

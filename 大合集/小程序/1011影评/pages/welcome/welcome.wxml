@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="head">
+      <image src="/images/logo.png" ></image>
+      <h3>hello 小程序</h3>
+      <button hover-class="button-hover" bindtap="handleClick">开启我的小程序之旅</button>
+</view>

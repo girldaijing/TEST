@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <p id="test">hello world</p>
+    <script>
+        // 了解
+        var test = document.getElementById("test");
+        /* nodeValue
+        -->textNode,commentNode  会输出值,其他类型输出null
+         */
+        var txt = test.firstChild;
+        console.log(test.nodeValue);
+        console.log(txt.nodeValue);
+        console.log(test instanceof Node);
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+package com.igeek.day01;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       byte a=127;
+       int b=1;
+       byte c=(byte)(a+b);
+       System.out.print(c);
+	}
+
+}

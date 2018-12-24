@@ -1,0 +1,42 @@
+@import"command.css";
+.pic  img{
+    width: 100%;
+}
+.display{
+    width: 80%;
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.display .nav{
+    height:40px;
+    width: 150px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background: rgb(45,174,54);
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.display iframe{
+   width:100%;
+   height: 403px;
+
+}
+.display .line{
+    height: 1px;
+    width: 1065px;
+    background-color: #2DAE36;
+    vertical-align: bottom;
+}
+.display #word{
+    text-indent: 40px;
+    font-size: 15px;
+     margin-top: 30px;
+   
+}
+
+.display span{
+    color: #2DAE36;
+}

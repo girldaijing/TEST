@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 1px solid #333;
+    position: relative;
+}
+.list{
+    width: 4200px;
+    height: 400px;
+    position: absolute;
+}
+.list img{
+    float: left;
+}
+#prev,#next{
+    cursor: pointer;
+    background:url("../images/icon-slides.png");
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    border: none;
+}
+#prev{
+    background-position-x: 0px;
+    
+}
+#next{
+    right: 0;
+    background-position-x: -43px;
+}
+#btns{
+    
+    bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+}
+#btns span{
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(104, 103, 105);
+    border-radius: 50%;
+}
+#btns .current{
+    
+    background-color: rgb(177, 110, 240);
+}

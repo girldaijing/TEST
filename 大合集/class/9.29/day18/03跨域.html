@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        1.创建ajax核心对象
+        2.与服务器建立连接
+        3.向服务器发送请求
+        4.服务器响应
+         */
+        var url= "https://api.douban.com/v2/book/search?q=javascript&count=1";
+        var xhr = new XMLHttpRequest();
+        xhr.open("get",url);
+        xhr.send();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && xhr.status == 200){
+                var reponse = xhr.responseText;
+                console.log(reponse);
+            }
+        }
+    </script>
+</body>
+</html>

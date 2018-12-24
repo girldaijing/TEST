@@ -1,0 +1,14 @@
+.img{
+    width: 50rpx;
+    height: 50rpx;
+    vertical-align: middle;
+  }
+  .word{
+    font-size: 27rpx;
+    color: rgb(147, 145, 148);
+  }
+  .yuedu-list{
+    margin-top: 50rpx;
+    cursor: pointer;
+  }
+  

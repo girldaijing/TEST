@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="list" id="list" style="left:-600px">
+            <img src="images/05.png" alt="">
+            <img src="images/01.png" alt="">
+            <img src="images/02.png" alt="">
+            <img src="images/03.png" alt="">
+            <img src="images/04.png" alt="">
+            <img src="images/05.png" alt="">
+            <img src="images/01.png" alt="">
+        </div>
+        <button id="prev"></button>
+        <button id="next"></button>
+        <div id="btns">
+            <span class="current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script>
+    var container=document.getElementById("container");
+    var list=document.getElementById("list");
+    var prev=document.getElementById("prev");
+    var next=document.getElementById("next");
+
+    next.onclick=function(){
+        let newleft=parseInt(list.style.left)+(-600);
+        if(newleft<-3000){
+            list.style.left=(-600)+"px";
+        }else{
+            list.style.left=newleft+"px";
+        }
+    }
+
+
+    prev.onclick=function(){
+        let newleft=parseInt(list.style.left)+600;
+        if(newleft>-600){
+            list.style.left=(-3000)+"px"
+        }else{
+            list.style.left=newleft+"px"
+        }
+    }
+    </script>
+</body>
+</html>

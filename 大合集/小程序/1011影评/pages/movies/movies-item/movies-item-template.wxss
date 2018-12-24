@@ -1,0 +1,24 @@
+@import "../star/star-template";
+.movies-item .evaluate{
+    display: flex;
+
+}
+.movies-item{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.evaluate{
+    align-items: center;
+}
+.evaluate text{
+    margin-left:10rpx;
+}
+.movies-item>.banner{
+    width:230rpx;
+    height:300rpx;
+}
+.movies-item .head{
+    margin-top:10px;
+    margin-bottom: 10px;
+}

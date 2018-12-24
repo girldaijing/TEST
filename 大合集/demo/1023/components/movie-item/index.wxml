@@ -1,0 +1,6 @@
+<!--components/movie-item/index.wxml-->
+<!-- <view class="movie-item" catchtap="onclick">
+    <image src="{{imgUrl}}"></image>
+    <text>{{title}}</text>
+</view> -->
+<text>{{_num}}</text>

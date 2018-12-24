@@ -1,0 +1,12 @@
+<!--pages/movie/search/search.wxml-->
+<import src="../item/item"></import>
+<view class="search">
+        <icon type="search" color="#405F80" size="20"></icon>
+        <input type="text" confirm-type="search" bindconfirm="onConfirm"/>
+</view>
+
+<view class="more-container" >
+<block wx:for="{{movies}}"  wx:key="index">
+<template is="itemTemplate" data="{{...item}}"></template>
+</block>
+</view>

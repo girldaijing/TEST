@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/base.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+    body{
+        background-color: rgb(230, 234, 227);
+    }
+    .head{
+        width:320px;
+        height:200px;
+        margin-left: 36%;
+       
+        line-height: 20px;
+        text-align: center;
+        padding-right: 60px;
+    }
+    .head #word-1{
+        background-color: #00a78e;
+        font-size: 24px;
+        color: #fff;
+    }
+   .head h3{
+        width: 190px;
+        height: 40px;
+        font-size: 28px;
+        line-height: 40px;
+        margin-left: 15px;
+        position: relative;
+    }
+    .head h3::after{
+       position: absolute;
+       content: "";
+       border: 10px solid transparent;
+       border-top-color:#00a78e;
+       left:17px;
+      bottom:-20px;
+    }
+    .head h1{
+        width: 165px;
+        height: 40px;
+        font-size: 28px;
+        line-height: 40px;
+        margin-left: 25px;
+    }
+    .head span{
+        margin: 10px;
+    }
+    .head #word-2{
+        width: 220px;
+        height: 1px;
+        background-color:rgb(140, 137, 137);
+        position: relative;
+    }
+    .head #word-3{
+        width: 60px;
+        height:10px;
+        background-color: #00a78e;
+        position: absolute;
+        right: 53.5%;
+        top: 127px;
+    }
+
+   .container{
+       width: 1000px;
+       height:1000px;
+   }
+   .left{
+       text-align: center;
+       padding-left:60px; 
+      margin-top: -60px;
+   }
+  .left>.list1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width:190px;
+      height:800px;
+   }
+  
+   .list1 li{
+       line-height: 40px;
+       list-style: none;
+       font-size: 17px;
+       width: 190px;
+       height: 40px;
+       background-color: #1b242f;
+       color: #fff;
+       text-align: center;
+   }
+
+   .middle{
+    border-right: 1px solid rgb(140, 137, 137);
+    margin-top: -30px;
+   }
+
+   .middle>.list2
+     {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width:55px;
+      height:900px;
+      margin-top: -60px;
+     
+     }
+
+   
+
+   .list2 li{
+      list-style: none;
+      font-size: 17px;
+      width:50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #00a78e;
+      text-align: center;
+      padding-top: 15px;
+   }  
+  
+  
+   .right>.list3{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 820px;
+      padding-left: 80px;
+      margin-top:-20px;
+   }
+   .list3  li{
+      list-style: none;
+      width:500px;
+      height:160px;
+      background-color:#fff;
+      line-height: 30px;
+      border-bottom: 5px solid  #00a78e;
+      position: relative;
+   }  
+   .list3>li::after{
+       position: absolute;
+       content: "";
+       border: 10px solid transparent;
+       border-right-color:#fff;
+       left:-20px;
+       top:38px;
+   } 
+   .list3 li>p{
+    font-size: 13px;
+    color: rgb(206, 203, 203);
+    
+   }
+    </style>
+</head>
+<body>
+    <div class="head">
+           <h3 id="word-1">
+               WHAT I DID
+           </h3>
+           <h1>
+               <span>教育</span><span>实践</span>
+           </h1>
+           <p id="word-2"></p>
+           <p id="word-3"></p>
+    </div>
+    
+    <div class="container">
+  <div class="col-md-4 col-sm-12 col-xs-12 left">
+        <ul class="list1">
+            <li>2017-2018</li>
+            <li>2016-2017</li>
+            <li>2015-2016</li>
+            <li>2013-2015</li>
+            <li>2003-2013</li>
+        </ul>
+    </div>
+
+
+ 
+   <div class="col-md-1  col-sm-3 col-xs-9 middle">
+      <ul class="list2">
+            <li><img src="1.PNG"></li>
+            <li><img src="1.PNG"></li>
+            <li><img src="1.PNG"></li>
+            <li><img src="1.PNG"></li>
+            <li><img src="1.PNG"></li>
+        </ul>  
+    </div>
+
+    <div class="col-md-7 col-sm-3 col-xs-9 right">
+        <ul class="list3">
+            <li>
+             
+                   <h3>大三</h3>
+                   <p>大三这一年我学会了很多，成长了很多，也成熟了很多 。毕业在即，道声珍重，不忘青春岁月如风，你我曾经相逢。
+                       今朝离别，难舍情浓，祝君大鹏展翅长空，潜龙风起云动。千言万语，诉不尽情衷，愿你人生路上圆美梦</p>
+             
+            </li>
+            <li>
+                    <h3>大三</h3>
+                     <p>大三这一年我学会了很多，成长了很多，也成熟了很多 。毕业在即，道声珍重，不忘青春岁月如风，你我曾经相逢。
+                                今朝离别，难舍情浓，祝君大鹏展翅长空，潜龙风起云动。千言万语，诉不尽情衷，愿你人生路上圆美梦</p>
+                      
+            </li>
+            <li>
+                 
+                     <h3>大三</h3>
+                     <p>大三这一年我学会了很多，成长了很多，也成熟了很多 。毕业在即，道声珍重，不忘青春岁月如风，你我曾经相逢。
+                                今朝离别，难舍情浓，祝君大鹏展翅长空，潜龙风起云动。千言万语，诉不尽情衷，愿你人生路上圆美梦</p>
+                       
+            <li>
+                  
+                     <h3>大三</h3>
+                    <p>大三这一年我学会了很多，成长了很多，也成熟了很多 。毕业在即，道声珍重，不忘青春岁月如风，你我曾经相逢。
+                                今朝离别，难舍情浓，祝君大鹏展翅长空，潜龙风起云动。千言万语，诉不尽情衷，愿你人生路上圆美梦</p>
+                      
+            </li>
+            <li>
+                    
+                 <h3>大三</h3>
+                <p>大三这一年我学会了很多，成长了很多，也成熟了很多 。毕业在即，道声珍重，不忘青春岁月如风，你我曾经相逢。
+                                今朝离别，难舍情浓，祝君大鹏展翅长空，潜龙风起云动。千言万语，诉不尽情衷，愿你人生路上圆美梦</p>
+                    
+            </li>
+        </ul>
+    </div> 
+  </div>  
+</body>
+</html>

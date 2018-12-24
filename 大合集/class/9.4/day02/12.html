@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* javascript的顶级作用域是window,全局变量是widow的属性,函数是window的方法;
+        this的指向:
+        1.在事件中,this指向正在执行事情的当前对象
+        2.在方法中,谁调用方法,this指向谁
+         */
+        var a = 10;
+        // window.a=10;
+        function b(){
+            console.log(this.a);
+        }
+        // window.b();
+        b();
+        console.log(window.a);
+       
+    </script>
+</body>
+</html>

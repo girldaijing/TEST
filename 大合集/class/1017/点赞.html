@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+    <style>
+    .one{
+        color: #44f;
+    }
+    .two{
+        color: #44ff11;
+    }
+    button{
+        background: #fff;
+        border: none;
+        outline: none;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div id="app">
+         <like></like>
+    </div>
+    <template id="like-component">
+        <button @click="toggle_like"  v-bind:class="liked?'one':'two'">👍{{like_count}}</button>
+    </template>
+    <script>
+    Vue.component('like',{
+        template:"#like-component",
+        data:function(){
+            return{
+                like_count:10,
+                liked:false
+            }
+        },
+        methods:{
+            toggle_like:function(){
+                
+                if(!this.liked){
+                    this.like_count++
+                }else{
+                    this.like_count--
+                }
+                this.liked=!this.liked
+            }
+        }
+    })
+    new Vue({
+        el:"#app"
+    })
+    </script>
+</body>
+</html>

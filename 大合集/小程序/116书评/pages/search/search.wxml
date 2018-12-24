@@ -1,0 +1,2 @@
+<!--pages/search/search.wxml-->
+<v-search topMore="{{topMore}}" bottomMore="{{bottomMore}}"></v-search>

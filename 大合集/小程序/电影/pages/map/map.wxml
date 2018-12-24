@@ -1,0 +1,5 @@
+<!--pages/map/map.wxml-->
+<map id="map" circles="{{circles}}" show-location="{{true}}" 
+markers="{{markers}}" longitude="{{longitude}}" 
+bindmarkertap="marker" latitude="{{latitude}}" scale="25" ></map>
+

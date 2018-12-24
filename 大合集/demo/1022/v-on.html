@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+   
+
+
+</head>
+<body>
+    <!-- <div id="app">
+        <button @click="onclick" v-on="{mouseenter:onEnter,mouseleave:onout}">点我看控制台</button>
+    </div>
+    <script>
+    new Vue({
+        onclick:function(){
+            console.log('clicked')
+        },
+        onEnter:function(){
+            console.log('mouse enter')
+        },
+        onOut:function(){
+            console.log('mouse leave')
+        }
+    })
+    </script> -->
+
+
+
+
+
+
+
+
+<div id="app">
+    <!-- v-on:click="methodName" === @click="methodName" -->
+    <!-- v-on="{key: name,key2: name2}" key(键)：事件名称，name：方法名-->
+    <button @click="onClick" v-on="{mouseenter: onEnter, mouseleave: onOut}">点我看控制台</button>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        methods: {
+            onClick: function () {
+                console.log('clicked');
+            },
+            onEnter: function () {
+                console.log('mouse enter');
+            },
+            onOut: function () {
+                console.log('mouse leave');
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Person(name,age){
+           this.name=name;
+           this.age=age;
+    }
+    Person.prototype.see=function(){
+        console.log(this.name+":爱看电影");
+    }
+    var cheng=new Person("cheng",40);
+    var dai=new Person("dai",20);
+    console.log(cheng);
+    console.log(dai);
+    cheng.see();
+    </script>
+</body>
+</html>

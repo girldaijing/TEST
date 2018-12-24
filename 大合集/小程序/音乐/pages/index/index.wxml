@@ -1,0 +1,1 @@
+<v-music  title="{{music.title}}" url="{{music.url}}"></v-music>

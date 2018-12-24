@@ -1,0 +1,29 @@
+/* components/music/index.wxss */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picOne{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+.picTwo{
+    width: 50px;
+    height:50px;
+    position: absolute;
+    left: 135px;
+    top: 50px;
+}
+.rotate{
+    animation: rotate 12s infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}

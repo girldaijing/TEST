@@ -1,0 +1,3 @@
+<!--components/search/index.wxml-->
+<icon type="search" size="23" color="#44f" catchtap="onLike"></icon>
+<text>{{search}}</text>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+   #parent{
+       width: 100px;
+       height: 100px;
+       background-color: brown;
+   }
+   .none{
+       display: none;
+   }
+   .show{
+       display: block;
+   }
+   </style>
+</head>
+<body>
+    <div class="none" id="parent"></div>
+    <button id="toggle">toggle</button>
+    <script>
+    var  parent=document.getElementById("parent");
+    var  toggle=document.getElementById("toggle");
+     toggle.onclick=()=>{
+    //        if(parent.className=="none"){
+    //         parent.className="show"
+    //        }
+    //        else{
+    //         parent.className="none"
+    //        }
+            parent.classList.toggle("none")  //等价于上面
+     }
+
+  
+    </script>
+</body>
+</html>

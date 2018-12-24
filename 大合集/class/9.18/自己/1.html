@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <div id="parent"></div>
+    <script>
+        // jquery
+        // append,prepend,before,after
+        // 如何将jquery对象转为javascipt
+        // $("#parent")[0]
+        // $("#parent").get(0)
+    $(function(){
+        $("#parent").append("<p>hello world</p>")//hello world
+        $("#parent").prepend("<h1>jhnwof</h1>")//jhnwof
+        $("#parent").before("<i>dq3wt</i>")
+        $("#parent").after("<button>hertqqa</button>")
+    })
+    </script>
+</body>
+</html>

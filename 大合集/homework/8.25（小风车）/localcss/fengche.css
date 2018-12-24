@@ -1,0 +1,257 @@
+*{margin: 0;padding: 0;}
+
+.navbar-default{
+    background-color:#fff !important;
+    border: none !important; 
+}
+.navbar-brand{
+    margin-top:6px;
+    width:300px;
+    height:60px;
+    background: url("../images/logo.png") no-repeat left center;
+}
+@media(max-width:1200px){
+        .navbar-brand{
+            width:121px;
+            height:60px;
+            background: url("../images/logo_min.png") no-repeat left center;
+        }
+       
+}
+    
+ @media(min-width:769px)and(max-width:991px){
+        .navbar-nav{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+.navbar-nav a{
+    color: #999999;
+    font-size: 16px;
+    }
+.navbar-header{
+   margin-left: 12%;
+    }
+#shownav{
+    margin-left: 12% !important;
+        }
+.navbar-nav img{
+    margin-top: -10px ;
+        } 
+.navbar-nav li{
+    text-align: center;
+   height: 60px;
+}
+.navbar-nav  .bg-color{
+    background-color: #52B6EC !important;
+        }
+ .navbar-nav li:hover{
+     background-color: #52B6EC !important;
+        }
+ .navbar-nav li:active{
+            background-color: #52B6EC !important;
+        }
+ .navbar-nav  a{
+     color: #BEBEBE !important;
+     margin-top:8px;
+        }
+.navbar-nav .word-color{
+    color: #fff !important;
+        }
+ .navbar-nav  li:hover a{
+    text-decoration: none !important;
+    color: #fff !important;
+        }
+
+
+
+
+.carousel{
+    margin-top: -20px;
+    width:100%;
+    height: 690px;
+    background: url("../images/ppt_bg.jpg") no-repeat center;
+    position: relative !important;
+        }
+.carousel::before{
+    content: "";
+    display: table;
+        }
+.carousel-inner{
+    width: 786px !important;
+    height: 440px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18.5%;
+
+}
+.carousel-inner img{
+    width: 100%;
+}
+
+
+
+        
+.carousel-caption{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: -30px;
+    left:0 !important;
+} 
+
+
+.serve{
+    height: 540px;
+    margin-top: 80px;
+}
+.serve h2{
+    color: #52B6EC;
+}
+.line1{
+    width: 89px;
+    height: 1px;
+    border-bottom: 2px solid   #52B6EC;
+    margin-left: 46%;
+}
+.serve ul{
+    margin:100px 0 ;
+    height:400px;
+    
+}
+.serve li{
+    float: left;
+    width: 20%;
+}
+@media(max-width:768px){
+
+    .serve li{
+        width: 100%;
+    }
+}
+
+@media(min-width:769px)and(max-width:991px){
+    .serve li{
+        width: 50%;
+    }
+}
+
+
+
+.product{
+    padding-top: 50px;
+    height: 830px;
+    width: 100%;
+    background-color: #F1F5F8;
+}
+.product::before{
+    content: "";
+    display: table;
+}
+.product h2{
+    color: #52B6EC;
+}
+.line2{
+    width: 60px;
+    height: 1px;
+    border-bottom: 2px solid   #52B6EC;
+    margin-left: 48%;
+}
+
+.row img{
+padding-top: 10px;
+}
+
+.pic{
+    margin-top: 50px;
+    width: 1220px;
+    height: 690px;
+}
+/* .row-center{
+    margin-left: auto;
+    margin-right: auto;
+} */
+.pic div
+{
+   background-color: #fff;
+   border-bottom: 30px solid  #F1F5F8;
+   border-left:22px solid  #F1F5F8;
+   border-right:22px solid  #F1F5F8;
+   text-align: left;
+}
+.product p{
+    font-style:italic !important;
+    color: #BEBEBE;
+}
+
+
+
+
+.client{
+    height: 280px;
+    margin-top: 80px;
+}
+.client h2{
+    color: #52B6EC;
+}
+.pic1{
+    margin-top: 50px;
+}
+.pic1>div{
+    background-color: #F1F5F8;
+    border-left:22px solid  #fff;
+    border-right:22px solid  #fff;
+}
+
+
+
+.about{
+    color: #fff;
+    width:100%;
+    height:640px;
+    background: url("../images/about_bg.jpg") no-repeat center;
+}
+.about h2{
+    padding-top: 50px;
+}
+
+.line3{
+    width: 60px;
+    height: 1px;
+    border-bottom: 2px solid   #fff;
+    margin-left: 48%;
+}  
+.about #word{
+    padding-top: 70px;
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.address{
+    width:100%;
+    height:242px;
+    color: #fff;
+    font-size: 16px;
+    background: url("../images/content_bg.png") no-repeat center;
+}
+.address::before{
+    content: "";
+    display: table;
+}
+.middle{
+    margin-top: 100px;
+}
+.word1{
+    margin-top: 70px !important;
+}
+
+.footer{
+    margin-top: 50px;
+    height: 100px;
+    color: #BEBEBE;
+    font-size: 17px;
+}

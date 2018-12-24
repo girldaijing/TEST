@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 贪婪模式，懒惰模式 -->
+    <script>
+    var reg=/\d{3,6}/;
+    var reg01=/\d{3,6}?/
+    var str="1325437xdgbfnj ghsr";
+    console.log(str.replace(reg,"*"))//*7xdgbfnj ghsr
+    console.log(str.replace(reg01,"*"))//*5437xdgbfnj ghsr
+    </script>
+</body>
+</html>

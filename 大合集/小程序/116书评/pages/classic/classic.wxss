@@ -1,0 +1,18 @@
+/* pages/classic/classic.wxss */
+.header{
+    display: flex;
+    height:100rpx;
+    align-items: center;
+    padding-left:20rpx;
+    padding-right:20rpx;
+    justify-content: space-between;
+}
+.share{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+v-like{
+    margin-right: -90px;
+}

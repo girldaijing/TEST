@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    go();//显示go未定义
+    // 方法1
+    var go=function(){
+        console.log("heelo")
+    }
+    go();//输出heelo或者hello
+    // 方法2
+    function go(){
+        console.log("hello")
+    }
+    go();//输出hello
+    // 方法3
+    var go=new Function("a","console.log(a)")
+    go(1)
+
+    </script>
+</body>
+</html>

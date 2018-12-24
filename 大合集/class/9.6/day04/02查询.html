@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one{
+            margin-top: 10px;
+            width:100px;
+            height:100px;
+            background: #ff2d51;
+        }
+    </style>
+</head>
+<body>
+    <div id="test" class="one">
+        1
+    </div>
+    <div class="one">
+        2
+    </div>
+    <script>
+        /* 获取节点 */
+        var test = document.getElementById("test");
+        // class-->类数组对象
+        var divs = document.getElementsByClassName("one");
+        // 如何判断一个对象是不是数组-->Array.isArray(value)
+        /* 
+        class-->类数组对象,有length,它拥有数组的一部分方法--of
+         */
+        // console.log(divs);
+        // console.log(Array.isArray(divs));
+        // console.log(divs.length)
+        // for(var key of divs){
+        //     console.log(key);
+        // }
+        /* 对数组不能执行事件
+        divs.onclick=function(){
+            alert(1);
+        }
+        */
+        for(let i=0;i<divs.length;i++){
+            divs[i].onclick = function(){
+                alert(i);
+            }
+        }
+    </script>
+</body>
+</html>

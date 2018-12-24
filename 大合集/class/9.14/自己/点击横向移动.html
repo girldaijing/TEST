@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin: 0;padding: 0}
+    #btn{
+        width: 35px;
+        height: 20px;
+        background-color: blueviolet;
+
+    }
+    #test{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        border: 1px solid #333;
+    }
+    </style>
+</head>
+<body>
+    <button id="btn">跑</button>
+    <div id="test" style="left:0">
+        大一
+    </div>
+    <script>
+    var timer=100;
+    var btn=document.getElementById("btn");
+    var test=document.getElementById("test");
+    var animated=false;
+    btn.onclick=function(){
+        if(animated){
+            return false;
+        }
+        function go(){
+            animated=true;
+            var newleft=parseInt(left.style.left)+10;
+            test.style.left=newleft+"px";
+            if(parseInt(test.style.left)<100){
+                setTimeout(go,timer)
+            }
+            }
+    }
+    </script>
+</body>
+</html>

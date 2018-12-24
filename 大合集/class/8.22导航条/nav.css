@@ -1,0 +1,40 @@
+*{margin: 0;padding: 0}
+.parent{
+    list-style: none;
+    background: blueviolet;
+    line-height: 50px;
+    width: 500px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    float: left;
+    text-align: center;
+    width: 150px;
+}
+li:hover{
+    color: aliceblue;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.drop{
+    position: relative;
+}
+.drop-content{
+    background: brown;
+    position: absolute;
+    width: 150px;
+}
+.none{
+    display: none;
+}
+.none a{
+    display: block;
+}
+.drop:hover .drop-content{
+    display: block;
+}

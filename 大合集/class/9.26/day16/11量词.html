@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        不确定的数量
+        + -->1个或者多个 {1,}
+        ？-->一个或0个 {0,1}
+        * -->多个或没有 ({1,}|{0})
+         */
+        var reg=/\d+/g;
+        var str = "2321312fdfdsf323";
+        console.log(str.replace(reg,"*"));
+    </script>
+</body>
+</html>

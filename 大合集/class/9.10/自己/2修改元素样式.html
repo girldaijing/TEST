@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .current{
+        color: blue;
+    }
+    .bg{
+          background: blueviolet;
+    }
+    .fs{
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+   
+    <p id="test" class="current bg">hello world</p>
+    <script>
+        // ele.style.cssAttr
+        // ele.className
+        // ele.style.cssText
+        // ele.classList----获取的是一个class集合   ele.classList.add()    ele.classList.remove()
+        //  ele.classList.toggle()   在add和remove之间转换
+    var test=document.getElementById("test");
+    test.onclick=function(){
+        // this.style.backgroundColor="red";    //点击背景变红
+        // this.className="current"    //点击字体变蓝
+        // this.style.cssText="color:white;background-color:black;font-size:30px;"   //点击字体变大变白色，背景变黑
+        // this.classList.add("fs")  //点击字体变大
+        // this.classList.remove("current");  //点击字体变黑
+        // this.classList.toggle("current");   //点击字体变黑
+        console.log(this.classList.contains("current"))
+    }
+    </script>
+</body>
+</html>

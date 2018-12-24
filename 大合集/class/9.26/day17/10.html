@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <p id="test">hello world</p>
+    
+    <script>
+        $(function(){
+            var test = document.getElementById("test");
+            var url = "https://www.easy-mock.com/mock/5bac49528e6cec555097b6c6/ajax/getDemo";
+            $.ajax({
+                url,
+                type:"get",
+                dataType:"json",
+                success(res){
+                    var name = res.data.name;
+                    var age = res.data.age;
+                    test.innerHTML = `name:${name}-age:${age}`;
+                },
+                error(error){
+                   document.write(error.status)
+                }
+            })
+        })
+    </script>
+</body>
+</html>

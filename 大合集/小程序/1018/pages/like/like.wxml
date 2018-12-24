@@ -1,0 +1,2 @@
+<!--pages/like/like.wxml-->
+<image src="{{liked?'/images/like.png':'/images/unlike.png'}}" catchtap="onLike"></image>

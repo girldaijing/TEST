@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <!-- <img src="images/现代.png" alt=""> -->
+        <p>hello world</p>
+    </div>
+    <script>
+        // parentNode.appendChild(newElement);
+        /* 
+        document.createElement()-->创造一个元素节点
+         */
+        var parent = document.getElementById("parent");
+        var img = document.createElement("img");
+        img.src="images/现代.png";
+        img.id="img";
+        // class属性特殊,通过className设置
+        img.className="img";
+        parent.appendChild(img);
+        console.log(img);
+    </script>
+</body>
+</html>

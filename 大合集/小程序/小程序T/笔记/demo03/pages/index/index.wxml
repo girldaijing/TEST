@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<!-- <image bindtap="click" wx:if="{{show}}" src="/images/tab/ciwei.png" />
+<image bindtap="click" wx:else src="/images/tab/ciwei_hl.png" /> -->
+<image  bindtap="click" src="{{show?'/images/tab/ciwei.png':'/images/tab/ciwei_hl.png'}}" />

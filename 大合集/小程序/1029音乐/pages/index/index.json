@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "v-music":"/components/music/index",
+        "v-movie":"/components/movie/movie"
+    }
+}

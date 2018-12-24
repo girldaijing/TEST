@@ -1,0 +1,2 @@
+<v-music title="{{music.title}}" url="{{music.url}}"></v-music>
+<!-- <v-movie title="{{title}}" content="{{content}}"></v-movie> -->

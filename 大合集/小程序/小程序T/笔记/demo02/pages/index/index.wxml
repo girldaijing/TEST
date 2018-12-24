@@ -1,0 +1,4 @@
+<block wx:for="{{arr}}" wx:key="index">
+    <view>{{item}}</view>
+</block>
+<view bindtap="click">{{msg}}</view>

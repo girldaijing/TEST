@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    span{
+        font-size: 30px;
+       
+    }
+    </style>
+</head>
+<body>
+    <img src="images/0.png" alt="">
+    <img src="images/0.png" alt="">
+    <span>:</span>
+    <img src="images/0.png" alt="">
+    <img src="images/0.png" alt="">
+    <span>:</span>
+    <img src="images/0.png" alt="">
+    <img src="images/0.png" alt="">
+   
+    <script>
+        showTime();
+        setInterval(showTime,1000)
+        function showTime(){
+            var oDate=new Date();
+            var hour=oDate.getHours();
+            var minute=oDate.getMinutes();
+            var second=oDate.getSeconds();
+            var img=document.getElementsByTagName("img")
+            function transform(value){
+               if(value<10){
+                  return "0"+value;
+                 }else{
+                  return ""+value
+                 }
+             }
+    // console.log(transform(second))
+
+    var allTime=transform(hour)+transform(minute)+transform(second);
+
+
+    for(let i=0;i<allTime.length;i++){
+        img[i].src="images/"+allTime.charAt(i)+".png"
+    }
+        }
+    
+    </script>
+</body>
+</html>

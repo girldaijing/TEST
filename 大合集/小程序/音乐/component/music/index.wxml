@@ -1,0 +1,9 @@
+<!--component/music/index.wxml-->
+<view class="pic">
+    <image src="/images/banner.png" class="back {{isPlay?'rotate':''}}"></image>
+    <image src="{{isPlay?'/images/play.png':'/images/pause.png'}}" class="btn" bindtap="onMusic"></image>
+</view>
+<!-- <view class="words">
+    <text>{{title}}</text>
+    <text>{{content}}</text>
+</view> -->

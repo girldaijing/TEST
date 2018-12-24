@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="email">
+    <script>
+        //邮箱的规则  
+        /* 
+        395775324@qq.com 
+        cheng_chao@163.com
+        一串数字,字母或下划线  
+        @
+        一串数字英文 
+        .
+        一串英文 
+         */   
+        var reg =/^\w+@[0-9a-z]+\.[a-z]+$/i;
+        var email = document.getElementById("email");
+        email.onchange = function(){
+            if(!reg.test(this.value)){
+                alert("邮箱不符合规则")
+            }
+        }
+    </script>
+</body>
+</html>

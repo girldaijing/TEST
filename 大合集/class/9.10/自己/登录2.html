@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+    .form{
+        width: 300px;
+        height: 300px;
+        border: 1px solid #333;
+        margin: 60px;
+    }
+    ul{
+        list-style: none;
+        width: 300px;
+        height: 50px;
+        border-bottom: 1px solid #333;
+    }
+    li{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .current{
+        color: rgb(221, 68, 7);
+    }
+    .one{
+        width: 300px;
+        height: 200px;
+        margin-top: 35px;
+        text-align: center;
+    }
+    .two{
+        width: 300px;
+        height: 200px;
+        margin-top: 35px;
+        display: none;
+    }
+    .two img{
+        margin-left: 59px;
+    }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <ul>
+            <li class="current">账号登录</li>
+            <li>扫码登录</li>
+        </ul>
+        <div class="content">
+            <div class="one">
+                账号登录
+            </div>
+            <div class="two">
+                <img src="01.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    var lis=document.getElementsByTagName("li");
+    var contents=document.querySelectorAll(".content>div");
+    for(let i=0;i<lis.length;i++){
+        lis[i].onclick=function(){
+            for(let k=0;k<lis.length;k++){
+                lis[k].className="";
+            }
+            this.className="current";
+            for(let i=0;i<contents.length;i++){
+                contents[i].style.display="none";
+            }
+            contents[i].style.display="block";
+        }
+    }
+    
+    </script>
+</body>
+</html>

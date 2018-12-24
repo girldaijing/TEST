@@ -1,0 +1,28 @@
+<view class="yuedu-detail">
+
+    <view class="head">
+        <image src="{{isPlay?music.coverImg:data.imgSrc}}" class="banner"></image>
+        <image bindtap="playmusic" src="{{isPlay?'/images/music/music-stop.png':'/images/music/music-start.png'}}"
+            class="music"></image>
+    </view>
+
+    <view class="content">
+        <image src="{{data.avatar}}" class="avatar"></image>
+        <p class="word">知乎发表于 <h3>{{data.date}}</h3>
+        </p>
+        <view class="title">{{data.title}}</view>
+        <view class="line"></view>
+
+        <view class="logo">
+
+            <image src="{{allcollected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}" catchtap="collect"></image>
+            <image src="{{shared?'/images/icon/share.png':'/images/icon/share-anti.png'}}" catchtap="share"></image>
+        </view>
+
+
+        <text>
+            {{data.detail}}
+        </text>
+    </view>
+
+</view>

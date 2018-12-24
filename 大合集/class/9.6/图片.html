@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        width: 300px;
+    }
+    </style>
+</head>
+<body>
+    <img src="images/placeholder.png" alt="" id="show">
+    <button id="morder">现代</button><button id="old">古典</button>
+
+    <script>
+    var img=document.getElementById("show");
+    var morder=document.getElementById("morder");
+    var old=document.getElementById("old");
+    morder.onclick=function(){
+        img.src="images/现代.png";
+    }
+    old.onclick=function(){
+        img.src="images/古典.png";
+    }
+
+    </script>
+</body>
+</html>

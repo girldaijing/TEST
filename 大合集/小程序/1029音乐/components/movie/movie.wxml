@@ -1,0 +1,3 @@
+<!--components/movie.wxml-->
+<view>{{title}}</view>
+<view>{{content}}</view>

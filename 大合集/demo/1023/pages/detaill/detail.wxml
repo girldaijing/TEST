@@ -1,0 +1,2 @@
+<!--pages/detaill/detail.wxml-->
+<v-num num="{{num}}">10</v-num>

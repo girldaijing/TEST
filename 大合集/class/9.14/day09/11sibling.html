@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <ul>
+        <li>小米</li>
+        <li id="apple">苹果</li>
+        <li>华为</li>
+    </ul>
+    <script>
+        /* 
+        siblings()-->找到所有的兄弟节点
+        next()
+        prev()
+         */
+        // var apple = $("#apple").prev();
+        // console.log(apple)
+        $("li").click(function(){
+            $(this).css({color:"red"}).siblings().css({color:"#333"});
+        })
+    </script>
+</body>
+</html>

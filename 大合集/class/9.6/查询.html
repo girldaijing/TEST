@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .one{
+        width: 100px;
+        height: 100px;
+        background-color:blueviolet;
+        margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="one" id="test">1111111111</div>
+    <div class="one">2222222222</div>
+    <script>
+    var test=document.getElementById("test");
+    var divs=document.getElementsByClassName("one");
+    // console.log(divs);
+    // console.log(Array.isArray(divs));
+    // console.log(divs.length);
+    // for (var key of divs){
+    //     console.log(key)
+    // }
+
+
+
+    for(let i=0;i<divs.length;i++){
+        divs[i].onclick=function(){
+            alert(i);
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #test{
+        width: 100px;
+        background-color: brown;
+    }
+    </style>
+</head>
+<body>
+    <div id="test" style="height:100px"></div>
+    <script>
+
+        var test=document.getElementById("test");
+        var height=test.style.height;
+        console.log(parseInt(height));
+        test.onclick=function(){
+            this.style.height=parseInt(test.style.height)+1+"px";
+        }
+        // string-->number
+        //第一位必须为数字
+    var a="12px";
+    var b="a13px";
+    var c="13.546px";
+    console.log(parseInt(a));
+    console.log(parseInt(b));
+    console.log(parseFloat(c));
+    </script>
+</body>
+</html>

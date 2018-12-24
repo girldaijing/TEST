@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        JS的参数-->
+        函数内部有个arguments对象,它用来存放函数传入的参数,是一个类数组对象
+         */
+        function go(a,b,c){
+            //arguments
+            console.log(a);
+            console.log(arguments[0]);
+            console.log(arguments[2]);
+        }
+        go(1,2,3);
+        
+    </script>
+</body>
+</html>

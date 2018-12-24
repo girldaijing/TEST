@@ -1,0 +1,33 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome image{
+    margin-top: 150rpx;
+    width:200rpx;
+    height:200rpx;
+}
+.welcome text{
+    margin-top:100rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.welcome button{
+    cursor: pointer;
+    margin-top: 100rpx;
+    font-size: 16px;
+    width:300rpx;
+    height:100rpx;
+    line-height: 100rpx;
+    border:1rpx solid #405F80;
+    border-radius: 10rpx;
+    background: #B3D4DB;
+}
+page{
+    height: 100%;
+    background: #B3D4DB;
+}
+.button-hover{
+    background:red;
+}

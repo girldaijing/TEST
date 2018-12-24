@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin: 0;padding: 0;}
+    .head{
+        width: 560px;
+        height: 60px;
+        line-height: 60px;
+        float: right;
+        margin-right: 25px;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    li{
+        flex: 1;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+    }
+    a{
+        color: black;
+    }
+    a:hover{
+        color: rgb(30, 104, 243);
+    }
+    .sanjiao{
+        position: relative;
+    }
+    .sanjiao::after{
+        content: "";
+        position: absolute;
+        border: 6px solid transparent;
+        border-top-color: black;
+        right: -12px;
+        top: 10px;
+    }
+    button{
+        height: 24px;
+        width: 62px;
+        background-color:  rgb(30, 104, 243);
+        border: none;
+        color: #fff;
+        margin-left: 10px;
+    }
+    .show{
+        width: 100px;
+        height: 160px;
+        border: 1px solid rgb(214, 214, 214);
+        position: relative;
+    }
+    .show::before , .show::after{
+        position: absolute;
+        content: "";
+        display: table;
+        border: 10px solid transparent;
+    }
+    .show::before{
+        border-bottom-color: rgb(214, 214, 214);
+      
+        top: -20px;
+        left: 40px;
+    }
+    .show::after{
+        border-bottom-color:#fff;
+        top: -19px;
+        left: 40px;
+          z-index: 100;
+    }
+    .show>a{
+        line-height: 40px;
+        display: block;
+    }
+    #two{
+        display: none;
+    }
+    .apprent{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="head">
+       <ul>
+           <li><a href="">新闻</a></li>
+           <li><a href="">hao123</a></li>
+           <li><a href="">地图</a></li>
+           <li><a href="">视频</a></li>
+           <li><a href="">贴吧</a></li>
+           <li><a href="">学术</a></li>
+           <li><a href="">登录</a></li>
+           <li class="jianjiao" id="one">
+               <a href="" class="sanjiao">设置</a>
+               <div class="show" id="two">
+                   <a href="">搜索设置</a>
+                   <a href="">高级搜索</a>
+                   <a href="">关闭预测</a>
+                   <a href="">隐私设置</a>
+               </div>
+            </li>
+           <li><button>更多产品</button></li>
+       </ul>
+    </div>
+
+    <script>
+         var one=document.getElementById("one");
+         var two=document.getElementById("two");
+         one.onclick=()=>{
+            // two.classList.toggle("none");
+            if(two.className=="jianjiao"){
+                two.className="apprent"
+            }
+            else{
+                two.className="jianjiao"
+            }
+         }
+    </script>
+</body>
+</html>

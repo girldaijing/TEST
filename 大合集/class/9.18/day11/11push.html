@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        增加-->都会改变数组
+        1.push从后增加
+        push(para1,para2)
+        2.unshift从头增加
+        unshift(para1,para2)
+         */
+         /* 
+         concat(para1,para2)
+         contcat([para1,para2])
+         不会改变数组的内容
+          */
+        var arr = [1,2,3,4];
+        // arr.push(5,6);
+        // arr.unshift(-1,0);
+        var n = arr.concat([7,8])
+        console.log(arr);
+        console.log(n);
+    </script>
+</body>
+</html>

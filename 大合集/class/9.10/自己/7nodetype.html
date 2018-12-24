@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="body">
+    <p id="test">hello world</p>
+    <script>
+        // nodetype----
+        // 1代表元素节点
+        // 2代表属性节点
+        // 3代表文本节点
+        // 9代表document
+    var test=document.getElementById("test").firstChild;
+    var attr=document.body.getAttributeNode("id");
+    console.log(document.nodeType);
+    console.log(document.body.nodeType);
+    console.log(attr.nodeType);
+    console.log(test.nodeType);
+    </script>
+</body>
+</html>

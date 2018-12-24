@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border:1px solid #333;
+            border-collapse: collapse;
+        }
+        table{
+            width:500px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>商城</th><th>手机</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Tmall</td><td>小米</td></tr>
+            <tr><td>Tmall</td><td>小米</td></tr>
+            <tr><td>Tmall</td><td>小米</td></tr>
+            <tr><td>Tmall</td><td>小米</td></tr>
+            <tr><td>Tmall</td><td>小米</td></tr>
+        </tbody>
+    </table>
+    <script>
+        /* 
+        tHead-->获取 thead部分
+        tBodies-->获取 tBody部分 获取的是一个类数组
+        rows -->获取tr的集合
+         */
+        var table =  document.getElementById("table");
+        table.tHead.style.background = "#ff2d51";
+        var rows = table.tBodies[0].rows;
+        for(var i=0;i< rows.length;i++){
+            if(i%2==0){
+                rows[i].style.background = "#EEEEEE"
+            }else{
+                rows[i].style.background = "#44CEF6"
+            }
+        }
+    </script>
+</body>
+</html>

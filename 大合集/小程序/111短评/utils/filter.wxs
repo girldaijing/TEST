@@ -1,0 +1,6 @@
+function filter(arr,index){
+    return arr.slice(0,index)
+}
+module.exports={
+    filter:filter
+}

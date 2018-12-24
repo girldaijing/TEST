@@ -1,0 +1,11 @@
+<!--pages/book/book.wxml-->
+<view class="search" catchtap="onsearch">
+    <icon type="search" color="#999"></icon>
+    <text>搜索图书名称</text>
+</view>
+<view class="bookwords">热门书籍 </view>
+<view class="laji">
+    <block wx:for="{{books}}" wx:key="{{index}}">
+        <v-book book="{{item}}"></v-book>
+    </block>
+</view>

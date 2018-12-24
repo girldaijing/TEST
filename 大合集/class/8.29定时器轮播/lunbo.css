@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+.content{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #333;
+}
+#list{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+}
+#list img,#prev,#next,#btns{
+    position: absolute;
+}
+#list img:not(:first-child){
+    display: none;
+}
+#prev,#next{
+    top: 50%;
+    transform: translateY(-50%);   /*垂直居中 */
+    z-index: 100;
+    width: 40px;
+    height: 70px;
+    background: url("现代美女/icon-slides.png");
+    border: none;
+}
+#prev{
+    background-position-x: -86px;
+}
+#next{
+    background-position-x: -125px;
+    right: 0;
+}
+#btns{
+    z-index:101;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#btns .current{
+    background-color: rgba(255, 72, 0, 0.965);
+}
+#btns>span{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: rgba(44, 44, 44, 0.4);
+}
+

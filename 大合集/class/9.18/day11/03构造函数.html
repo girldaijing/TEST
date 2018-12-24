@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        构造函数:构造一个对象的函数
+        es6之前,使用构造函数模式一个类
+         */
+         function Person(name,age){
+             this.name = name;
+             this.age = age;
+         }
+        //  js的继承是基于原型的继承
+        /* 
+        在原型上定义一个方法,那么所有实例化的对象都共享这个方法
+         */
+         Person.prototype.sayName=function(){
+             console.log(this.name);
+         }
+         /* 
+         new
+         1.调用了构造函数
+         2.实例化了一个对象
+          */
+          /* 
+          this-->指向实例化的对象
+           */
+          var quan = new Person("全梦妍",18);
+          
+          quan.sayName();
+    </script>
+</body>
+</html>

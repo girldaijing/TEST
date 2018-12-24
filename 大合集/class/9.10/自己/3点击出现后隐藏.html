@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+       *{margin: 0;padding: 0;}
+    #title{
+        background: blueviolet;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        margin-left: 60px;
+        cursor: pointer;
+    }
+     #content{
+        border: 1px solid #333;
+        width: 198px;
+        height: 100px;
+        text-align: center;
+        margin-left: 60px;
+     }
+     .show{
+         display: none;
+     }
+   </style>
+</head>
+<body>
+    <div id="title">HTML</div>
+    <div id="content" class="none">
+        HTML负责网页的结构
+    </div>
+    <script>
+    var title=document.getElementById("title");
+    var content=document.getElementById("content");
+    title.onclick=function(){
+        if(content.classList.contains("show")){
+            content.classList.remove("show")
+        }
+        else{
+            content.classList.add("show")
+        }
+    }
+    </script>
+</body>
+</html>

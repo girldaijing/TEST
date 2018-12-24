@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/base.js"></script>
+</head>
+
+<body>
+    <script>
+        /*
+        原型
+        push,
+        pop,
+        slice 
+         */
+        /* 只要在原型上定义一个方法,所有实例化的对象都共享这个方法 */
+        Array.prototype.max = function (arr) {
+            return Math.max(...arr);
+        };
+        var arr = [1, 2, 3, 4];
+        console.log(arr.max(arr));
+    </script>
+</body>
+
+</html>

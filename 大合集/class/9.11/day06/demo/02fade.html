@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            width: 400px;
+            vertical-align: bottom;
+        }
+
+        .content {
+            cursor: pointer;
+            position: relative;
+            padding: 20px;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            width: 400px;
+            border: 1px solid #333;
+        }
+
+        .content>.modal {
+            left: 0;
+            top: 0;
+            opacity: .1;
+            width: 100%;
+            height: 100%;
+            background: rgb(15, 15, 15);
+            position: absolute;
+            z-index: 100;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="modal">
+            
+        </div>
+        <img src="images/fade.png" alt="">
+    </div>
+    <script>
+        var modal = document.getElementsByClassName("modal")[0];
+        var content = document.getElementsByClassName("content")[0];
+        var opacity = getComputedStyle(modal).opacity;
+        var value = opacity * 100;
+        var timer;
+        content.onmouseover = function () {
+            fade(40,2);
+
+        }
+        content.onmouseout =  function(){
+            fade(10,-2)
+        }
+        function fade(targetValue,speed){
+            clearTimeout(timer);
+            timer = setInterval(function () {
+                if (value == targetValue) {
+                    clearInterval(timer)
+                } else {
+                    value += speed;
+                    console.log(value)
+                    modal.style.opacity = value / 100;
+
+                }
+
+            }, 50)
+        }
+    </script>
+</body>
+
+</html>

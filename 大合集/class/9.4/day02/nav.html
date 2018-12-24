@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{
+            display: inline-block;
+            list-style: none;
+            text-align: center;
+            width:100px;
+            cursor: pointer;
+        }
+        li:hover{
+            background: rgba(151, 149, 149, 0.568);
+        }
+        ul{line-height: 50px;background: pink;}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>手机</li>
+        <li>平板</li> 
+        <li>电脑</li>
+    </ul>
+    <script>
+        var lis = document.getElementsByTagName("li");
+        var arr = Array.prototype.slice.apply(lis);
+        arr.forEach(function(element){
+            element.onclick = function(){
+                arr.forEach(function(element){
+                    element.style.background="pink";
+                })
+                this.style.background = "red"
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<form bindsubmit="onForm" class="form">
+  <input type="text" name="search" bind:focus="onFocus" bind:blur="onBlur" value="{{value}}"/>
+  <icon type="search" size="23" color="#44d" wx:if="{{isShow}}" catchtap="onclick"></icon>
+  <button formType="submit">搜索</button>
+</form>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

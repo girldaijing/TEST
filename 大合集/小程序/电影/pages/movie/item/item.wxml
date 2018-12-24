@@ -1,0 +1,11 @@
+<import src="../star/star"></import>
+<template name="itemTemplate">
+    <view class="item" catchtap="onclick" data-id="{{id}}">
+        <image src="{{imgUrl}}" class="banner"></image>
+        <text class="head">{{title}}</text>
+        <view class="evaluate">
+            <template is="starTemplate" data="{{stars}}"></template>
+            <text>{{average}}</text>
+        </view>
+    </view>
+</template>

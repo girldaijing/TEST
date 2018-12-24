@@ -1,0 +1,16 @@
+/**index.wxss**/
+@import "/pages/template/yuedu-list.wxss";
+swiper{
+  height: 400rpx;
+}
+.img{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.word{
+  font-size: 27rpx;
+  color: rgb(147, 145, 148);
+}
+
+

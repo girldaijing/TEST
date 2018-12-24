@@ -1,0 +1,7 @@
+<!--pages/mine/mine.wxml-->
+<view>
+    <image src="{{isEmpty?'/images/timg.jpg':imgUrl}}" mode="aspectFill" catchtap="imgClick"></image>
+</view>
+<view>
+    我想带一人回云深不知处，然后，藏起来
+</view>

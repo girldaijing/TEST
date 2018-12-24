@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(250, 250,250);
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.head-left{
+    float: left;
+    width: 540px;
+}
+.head-left ul{
+    display: flex;
+    justify-content: space-between;
+}
+.head-left li{
+    float: left;
+    color: rgb(146, 157, 149);
+}
+.head-left a{
+    color: rgb(146, 157, 149);
+}
+.head-right{
+    float: right;
+    width: 88px;
+}
+.head-right ul{
+    display: flex;
+    justify-content: space-between;
+}
+.head-right li{
+    float: left;
+    color: rgb(146, 157, 149);
+}
+.head-right a{
+    color: rgb(146, 157, 149);
+}
+
+
+.logo{
+    height: 100px;
+    clear: both;
+}
+.logo-left{
+    width: 100px;
+    height: 85px;
+    background: url("../images/logo.png") no-repeat left bottom;
+}
+.logo-right{
+    width: 570px;
+    height: 85px;
+    float: right;
+    bottom: 0;
+    right: 0;
+}
+.search{
+    width: 380px;
+    height: 40px;
+    margin-top: 44px;
+}
+.search>:first-child{
+    width: 340px;
+    height: 40px;
+    border: 1px solid rgb(146, 157, 149);
+    position: absolute;
+}
+.search>:last-child{
+    width: 40px;
+    height: 42px;
+    position: absolute;
+    right: 0;
+    bottom:-2px;
+    background: url("../images/fangdajing.png") no-repeat center;
+    border:1px solid rgb(146, 157, 149);
+    border-left: none;
+}
+.word-2{
+    left:174px;
+    bottom: 12px;
+    color: black;
+    background-color: rgb(239, 246, 255);
+}
+.word-3{
+    left:234px;
+    bottom: 12px;
+    color: black;
+    background-color: rgb(239, 246, 255);
+}
+.word-4{
+    left:294px;
+    bottom: 12px;
+    color: black;
+    background-color: rgb(239, 246, 255);
+}
+.shopping{
+    width: 140px;
+    float: right;
+    right: -13px;
+    bottom: 0;
+}
+
+.shopping img{
+    vertical-align: -2px;
+}
+.shopping a{
+    color: rgb(146, 157, 149);
+}
+.word-1{
+    width: 125px;
+    height: 40px;
+    line-height: 36px;
+    margin-top: 10px;
+    background-color: rgb(255, 219, 61);
+}
+.word-1 a{
+    color: black;
+}
+
+
+.nav{
+    height: 50px;
+    clear: both;
+}
+.nav-left{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    float: left;
+    background: rgb(255, 74, 0) url("../images/下拉箭头.PNG") no-repeat right center;
+}
+.nav-right{
+    width: 990px;
+    height: 50px;
+    background-color: rgb(64, 65, 69);
+    float: left;
+    line-height: 50px;
+}
+.nav-right ul{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-right li{
+    float: left;
+}
+.nav-right a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.word-5{
+    height: 40px;
+    line-height: 40px;
+    color: rgb(146, 157, 149);
+}
+.word-5 a{
+    color: rgb(146, 157, 149);
+}
+
+
+.detail{
+    height: 45px;
+    border-bottom:1px solid rgb(224, 224, 224); 
+}
+.detail-left{
+    float: left;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+}
+.detail-left a,span{
+    color: black;
+    margin-left: 8px;
+}
+.detail-left #word-1{
+    color: rgb(147, 149, 145);
+    font-size: 12px;
+}
+.detail-right{
+    width: 495px;
+    float: right;
+}
+.detail-right ul{
+    width: 495px;
+    display: flex;
+    justify-content: space-between;
+}
+.detail-right li{
+    float: left;
+    line-height: 45px;
+}
+.detail-right a{
+    color: rgb(147, 149, 145);
+}
+.detail-right a:hover{
+    color:  rgb(255, 74, 0);
+}
+.detail-right button{
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    background-color:  rgb(255, 74, 0);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.award{
+    height: 658px;
+    background: url("../images/hezi.png") no-repeat center;
+}
+.award img{
+    position: absolute;
+    left: 11%;
+    top: 5%;
+}
+.award-title{
+    width: 253px;
+    height: 206px;
+   left:41%;
+    top: 11%;
+}
+.award-title h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+.text-1{
+    color:  rgb(147, 149, 145);
+    font-size: 12px;
+}
+.text-2{
+    color:  rgb(255, 74, 0);
+    font-size: 50px;
+    margin: 30px 0;
+}
+.award-title button{
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    background-color:  rgb(255, 74, 0);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.technology{
+    height: 582px;
+    background: url("../images/hz-24.jpg") no-repeat center;
+}
+.technology-title{
+    width: 560px;
+    height: 102px;
+    left:28%;
+    top: 11%;
+}
+.technology-title h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+
+
+.design{
+    height: 804px;
+    background: url("../images/jihe.png") no-repeat center;
+}
+.movie{
+    height: 898px;
+    background: url("../images/dianying.png") no-repeat center;
+}
+.family{
+    height: 696px;
+    background: url("../images/jiating.png") no-repeat center;
+}
+
+
+
+.new-gift{
+    height: 550px;
+    
+    background: rgb(252, 252, 252) url("../images/hz-28.jpg") no-repeat center bottom;
+}
+.new-gift-title{
+    width: 400px;
+    height: 123px;
+    left:35%;
+    top: 7%;
+}
+.new-gift-title h1{
+    font-weight: normal;
+    font-size: 50px;
+    margin-bottom: -30px;
+}
+.new-gift button{
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    background-color:  rgb(255, 74, 0);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 3%;
+    left:46.5%;
+}
+
+
+
+.deploy{
+    height: 220px;
+    padding-top: 50px;
+    background-color: rgb(252, 252, 252);
+}
+.deploy ul{
+    height: 170px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.deploy li{
+    float: left;
+    height: 170px;
+    width: 175px;
+    line-height: 25px;
+    text-align: center;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+.deploy li:last-child{
+    border-right: none;
+}
+.deploy img{
+    margin-top: 40px;
+}
+
+.deploy a{
+    color: rgb(147, 149, 145);
+}
+
+
+.product{
+    height: 590px;
+    margin-top: 80px;
+    border-top: 1px solid rgb(224, 224, 224);
+    
+}
+.pro-nav{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 828;
+    height: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pro-nav li{
+    float: left;
+    height:410px;
+    width: 290px;
+    line-height: 25px;
+    text-align: center;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+.pro-nav li:last-child{
+    border-right: none;
+}
+.pro-nav img{
+    margin-top: 40px;
+}
+.pro-nav h3{
+    font-size: 16px;
+}
+.pro-nav p{
+    color: rgb(147, 149, 145);
+}
+#word-11{
+    color: rgb(255, 74, 0);
+}
+
+
+
+.footer{
+    height: 535px;
+    margin-top: 30px;
+    background-color: rgb(250, 250,250);
+}
+.footer-top{
+    height: 157px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-top img{
+    margin-top: 40px;
+}
+.footer-top ul{
+    width: 148px;
+    height: 157px;
+    float: left;
+    text-align: center;
+}
+.footer-top a{
+    color: black;
+    font-size: 16px;
+}
+.footer-middle{
+    height: 200px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.footer-middle ul{
+    width:200px;
+    height: 120px;
+    margin-top: 30px;
+    float: left;
+    text-align: center;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+.footer-middle>:last-child{
+    border-right:none; 
+}
+.footer-middle li{
+    text-align:center;
+    line-height: 30px;
+}
+.footer-middle h3{
+    font-size: 17px;
+}
+.footer-middle a{
+    color:rgb(151, 139, 125);
+    font-size: 14px;
+} 
+.footer-middle button{
+    background-color: rgb(255, 74, 0);
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+.footer-bottom{
+    margin-top: 20px;
+    height: 178px;
+    color:rgb(151, 139, 125);
+    line-height: 30px;
+}
+.footer-bottom span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-bottom img{
+    vertical-align: bottom;
+}
+.footer-bottom a{
+    color:rgb(151, 139, 125);
+}
+.footer-bottom select{
+    width: 180px;
+    height: 40px;
+
+}
+
+

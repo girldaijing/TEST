@@ -1,0 +1,14 @@
+@import "../../template/movie-item";
+.container{
+  padding:10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.item{
+  
+}
+/* .item:not(:nth-child(3n+3)){
+  margin-right:35rpx;
+} */

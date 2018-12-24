@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0}
+    ul{
+        list-style: none;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        display: flex;
+        background-color: brown;
+        color: aliceblue;
+    }
+    li{
+       flex: 1;
+       font-size: 28px;
+       cursor: pointer;
+    }
+    li:hover{
+        background-color: black;
+    }
+    .current{
+        background-color: blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="current">手机</li>
+        <li>平板</li>
+        <li>电脑</li>
+    </ul>
+
+    <script>
+    window.onload=function(){
+        var lis=document.getElementsByTagName("li");
+        for(let i=0;i<lis.length;i++){
+         
+            lis[i].onclick=function(){
+
+
+                for(let i=0;i<lis.length;i++){
+                    lis[i].style.backgroundColor="brown"
+                }
+
+                this.style.backgroundColor="blueviolet"
+            }
+        }
+    }
+    </script>
+</body>
+</html>

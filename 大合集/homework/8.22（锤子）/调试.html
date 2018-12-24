@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="base-self.css">
+<style>
+	.new{
+	height:400px ;
+}
+	
+.new ul{
+    border: 1px solid red;
+	text-align: center;
+	height: 400px;
+}
+.new li{
+    float: left;
+	width: 25%;
+	height: 100%;
+    position: relative;
+}
+.new>li:not(:last-child)::after{
+    content: "";
+    display:table;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: red;
+}
+</style>
+
+</head>
+<body>
+	<div class="new">
+   <ul>
+	   <li>
+		   <div> <img src="images/5-1.jpg" alt=""></div>
+	   </li>
+	   <li>
+		   <div>  <img src="images/5-1.jpg" alt=""></div>
+	   </li>
+	   <li>
+		   <div>  <img src="images/5-1.jpg" alt=""></div>
+	   </li>
+	   <li>
+		   <div>  <img src="images/5-1.jpg" alt=""></div>
+	   </li>
+   </ul>
+</div>
+</body>
+</html>

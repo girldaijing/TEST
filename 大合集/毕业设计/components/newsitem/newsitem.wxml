@@ -1,0 +1,6 @@
+<!--components/newsitem/newsitem.wxml-->
+<view class="news">
+    <view><text class="source">{{source}}</text><text class="date">{{date}}</text></view>
+    <view class="title">{{title}}</view>
+    <image src="{{image}}"></image>
+</view>

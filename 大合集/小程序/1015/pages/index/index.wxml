@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<!-- <view>
+    <text catchtap="click" class="{{color}}">
+        垃圾
+    </text>
+</view> -->
+<!-- <import src="success/success"></import>
+<daijing param="{{child}}"></daijing> -->
+
+<!-- catchtap:阻止事件冒泡，只显示当前事件 -->
+<!-- bindtap:显示多个事件 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" ></swiper>
+
+
+<!-- <view class="parent" catchtap="parent" data-title="parent">  
+    <view class="child" ></view>
+</view> -->
+
+
+<!-- <template is="success"></template> -->
+<!-- 1.定义
+    2.传递
+     3.接收
+     4.使用 -->

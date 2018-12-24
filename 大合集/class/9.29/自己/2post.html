@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var url="https://www.easy-mock.com/mock/5baedb2304aec42b451a8fd4/929/potest";
+    var xhr=new XMLHttpRequest();//核心部分
+    xhr.open("post",url);//获取方式
+    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")// 请求头
+    xhr.send();//发送请求
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4&&xhr.status==200){
+            console.log(xhr.responseText);
+        }
+    }
+    </script>
+</body>
+</html>

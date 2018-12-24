@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* js万物皆对象 
+        */
+        /*
+        基本类型只传值,引用类型既传值,也传址 
+         */
+        var go = function (){
+            console.log(1);
+        }
+        go.value = 1;
+
+        var see = go;
+        see.index = 3;
+        console.log(see.value);
+        console.log(go.index);
+    </script>
+</body>
+</html>

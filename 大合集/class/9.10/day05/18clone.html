@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parnet">
+        <div id="one">one</div>
+    </div>
+    <script>
+        // Element.cloneNode(true);
+        var parent = document.getElementById("parent");
+        var one  = document.getElementById("one");
+        var clone = one.cloneNode(true);
+        console.log(clone);
+    </script>
+</body>
+</html>

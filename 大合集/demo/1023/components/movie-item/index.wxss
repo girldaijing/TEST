@@ -1,0 +1,10 @@
+/* components/movie-item/index.wxss */
+/* .movie-item{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+image{
+    width: 210rpx;
+    height: 310rpx;
+} */

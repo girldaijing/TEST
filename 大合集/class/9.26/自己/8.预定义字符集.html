@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // [0-9]---\d
+    // [0-9a-zA-Z]-----\w   数字，字母，下划线
+    // 空格----\s
+    // .-----任意字符
+    var reg=/\s/;
+    var str="hello world136789_南方菜无"
+    console.log(str.replace(reg,"*"))
+    console.log(str.replace(/\d/g,"*"))
+    console.log(str.replace(/\w/g,"*"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .one{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="one">1</li>
+        <li class="one">2</li>
+        <li class="one">3</li>
+    </ul>
+    <script>
+    // var lis=document.getElementsByTagName("li");
+    var lis=document.querySelectorAll(".one")
+    console.log(lis);
+    // lis.onclick=function(){
+    //     alert(1);
+    // }    //对整个数组点击不能实现
+
+    for(let i=0;i<lis.length;i++){
+        lis[i].onclick=function(){
+
+           for(let i=0;i<lis.length;i++){
+                    lis[i].style.color="black"
+                }
+
+
+            this.style.color="red"
+            // alert(i)
+
+        }
+    }
+    </script>
+</body>
+</html>

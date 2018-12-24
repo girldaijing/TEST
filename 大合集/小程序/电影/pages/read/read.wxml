@@ -1,0 +1,18 @@
+<!-- index.wxml -->
+<import src="../read/read-template/read-template"></import>
+<view>
+  <swiper indicator-dots="true" autoplay="true"  interval="2000" duration="1000">
+    <block wx:for="{{imgUrl}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item.url}}" catch:tap="imgJump" data-id="{{item.id}}"></image>
+        </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>
+   <block wx:for="{{postList}}" wx:key="index">
+     <view catch:tap="handleClick" data-id="{{item.postId}}">
+      <template is="readList" data="{{...item}}"></template>
+      </view>
+  </block>
+</view>

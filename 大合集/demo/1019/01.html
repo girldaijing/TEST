@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="浪起来" @click="lang">
+        <input type="button" value="低调" @click="stop">
+        <h3>{{msg}}</h3>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                msg:"世间种种，最后终必，终必成空,",
+                timer:null
+            },
+            methods:{
+                lang:function(){
+                    if(this.timer!=null){
+                        return
+                    }
+                    this.timer=setInterval(()=>{
+                        var start=this.msg.substring(0,1);//从下标0开始截取一个字符
+                        var end=this.msg.substring(1);//截取从下标1开始及后面的所有字符
+                        this.msg=end+start;
+                    },300)
+                },
+                stop:function(){
+                    clearInterval(this.timer);
+                    this.timer=null;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

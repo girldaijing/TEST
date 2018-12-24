@@ -1,0 +1,14 @@
+<!--pages/List/List.wxml-->
+<view class="list">
+    <image src="{{in_theaters.movies[0].imgUrl}}"  class="listpic" catchtap="imgClick"></image>
+    <p class="wordsOne">豆瓣电影榜单集合</p>
+    <p class="wordsTwo">最新，最IN的影视信息收集</p>
+
+    <ul>
+        <li catchtap="jump" data-type="in_theaters">正在热映</li>
+        <li catchtap="jump" data-type="coming_soon">即将上映</li>
+        <li catchtap="jump" data-type="top250">TOP250</li>
+        <li catchtap="jump" >北美票房榜</li>
+    </ul>
+
+</view>

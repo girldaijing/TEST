@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0}
+        /* rem是相对于根元素,html的font-size而言
+        1rem=1rem iphone7  vw=10rem
+        1rem=.853333rem iphone5  vw=10rem
+        1rem=1.656rem iphone6plus vw=10rem
+         */
+        /*
+        flexible-->将布局视口的width等分成10rem; 
+         */
+         
+         #app{
+             width:10rem;
+             margin-left: auto;
+             margin-right: auto;
+         }
+         .demo{
+             width: 5rem ;
+             height: .266667rem;
+             background: red;   
+         }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="demo">
+
+        </div>
+    </div>
+    <script>
+        // 布局视口的width
+        var vw = document.documentElement.clientWidth;
+        //设备width
+        var dw = screen.availWidth;
+        // 设备像素比
+        var dpr = window.devicePixelRatio;
+        console.log("vw:"+vw);
+        console.log("dw:"+dw);
+        console.log("dpr:"+dpr)
+       
+    </script>
+</body>
+</html>

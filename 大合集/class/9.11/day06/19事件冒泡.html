@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>事件冒泡</title>
+    <style>
+        #parent{
+            width:200px;
+            height:200px;
+            border:1px solid #333;
+        }
+        #child{
+            margin: 30px;
+            width:100px;
+            height:100px;
+            border:1px solid #ff2d51;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        parent
+        <div id="child">child</div>
+    </div>
+    <script>
+        // 当子元素触发一个事件的时候,倘若父元素也有相同的事件,父元素的事件也会触发
+        var parent = document.getElementById("parent");
+        var child = document.getElementById("child");
+        parent.onclick = function(){
+            alert("parent");
+        }
+        child.onclick = function(event){
+            alert("child");
+            // 阻止事件冒泡
+            event.stopPropagation();
+        }
+    </script>
+</body>
+</html>

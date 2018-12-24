@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #table,td,th{
+        border-collapse: collapse;
+        border: 1px solid #333;
+    }
+    table{
+        width: 500px;
+        line-height: 50px;
+        text-align: center;
+    }
+    div{
+
+    }
+    input{
+        margin:15px 3px;
+        width: 260px;
+        height: 30px;
+        border: 1px solid #333;
+    }
+    </style>
+</head>
+<body>
+    <input type="text" id="shop">
+    <input type="text" id="cell">
+    <button id="add">提交</button>
+    <table id="table">
+        <thead><th>商城</th><th>手机</th></thead>
+        <tbody>
+        <tr><td>tmail</td><td>小米</td></tr>
+        <tr><td>tmail</td><td>小米</td></tr>
+        <tr><td>tmail</td><td>小米</td></tr>
+        <tr><td>tmail</td><td>小米</td></tr>
+        <tr><td>tmail</td><td>小米</td></tr>
+        </tbody>
+    </table>
+   <script>
+   var table=document.getElementById("table")
+   table.tHead.style.background="#ff2d51"
+   var rows=table.tBodies[0].rows;
+   for(var i=0;i<rows.length;i++){
+       if(i%2==0){
+           rows[i].style.background="#eeeeee"
+       }else{
+           rows[i].style.background="#44cf"
+       }
+   }
+
+
+   var shop=document.getElementById("shop")
+   var cell=document.getElementById("cell")
+   var add=document.getElementById("add")
+   add.onclick=function(){
+       var shopValue=shop.nodeValue
+       var cellValue=cell.nodeValue
+       var tr=document.createElement("tr")
+
+
+       var td=document.createElement("td")
+       td.innerHTML=shopValue
+       tr.appendChild(td);
+
+       console.log(tr);
+
+       var td1=document.createElement("td")
+       td1.innerHTML=cellValue;
+       tr.appendChild(td1);
+
+       table.tBodies[0].appendChild(tr)
+   }
+   
+   
+   </script> 
+</body>
+</html>

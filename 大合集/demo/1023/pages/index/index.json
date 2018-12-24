@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "v-movie-item":"/components/movie-item/index",
+        "v-num":"/components/movie-item/index"
+    }
+}

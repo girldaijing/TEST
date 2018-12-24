@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>你还可以输入<em id="em" style="color:red">0</em>/300</p>
+    <textarea cols="30" rows="10" id="txt"></textarea>
+    <script>
+        // onkeydown-->键盘按下去触发
+        var em = document.getElementById("em");
+        var txt = document.getElementById("txt");
+        txt.onkeydown = function () {
+            var len = getTextlengths(this.value);
+            em.innerHTML = len;
+        }
+
+        function getTextlengths(text) {
+            return text.replace(/[^\x00-\xff]/g, "**").length;
+        }
+    </script>
+</body>
+
+</html>

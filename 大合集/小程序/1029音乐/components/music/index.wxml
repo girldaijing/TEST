@@ -1,0 +1,7 @@
+<!--components/music/index.wxml-->
+<view class="container">
+    <image src="/images/banner.png" class="picOne {{isPlay?'rotate':''}}"></image>
+    <image src="{{isPlay?'/images/play.png':'/images/pause.png'}}" class="picTwo" bind:tap="onMusic"></image>
+   
+</view>
+

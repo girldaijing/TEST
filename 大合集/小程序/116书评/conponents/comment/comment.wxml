@@ -1,0 +1,5 @@
+<!--conponents/comment/comment.wxml-->
+<view class="container tag-class" bind:tap="onAdd">
+    <text>{{content}}</text>
+    <slot name="after"></slot>
+</view>

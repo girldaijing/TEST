@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin: 0;padding: 0}
+    .form{
+        width: 400px;
+        height: 450px;
+        border: 1px solid #333;
+        margin: 60px;
+    }
+    ul{
+        width: 400px;
+        height: 50px;
+        list-style: none;
+        border-bottom:1px solid #333;
+    }
+    li{
+        float: left;
+        width: 198px;
+        height: 48px;
+        text-align: center;
+        line-height: 48px;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .current{
+        color: rgb(255, 72, 0);
+    }
+    .one{
+        margin-top: 50px;
+        width: 400px;
+        height: 350px;
+        text-align: center;
+    }
+    .two{
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+    .two img{
+        margin-left: 110px;
+      
+        margin-top: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <ul>
+            <li class="current">账号登录</li>
+            <li>扫码登录</li>
+        </ul>
+        <div class="content">
+            <div class="one">
+                账号登录
+            </div>
+            <div class="two">
+                <img src="01.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    var lis=document.getElementsByTagName("li");
+    var contents=document.querySelectorAll(".content>div");
+    for(let i=0;i<lis.length;i++){
+        lis[i].onclick=function(){
+             for(let k=0;k<lis.length;k++){
+                 lis[k].className=""
+             }
+        this.className="current";
+            for(let i=0;i<contents.length;i++){
+                  contents[i].style.display="none";
+            }
+            contents[i].style.display="block";
+        }      
+    }
+    
+    </script>
+</body>
+</html>

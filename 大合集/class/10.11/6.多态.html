@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function mapRender(map){
+        map.render()
+    }
+    function GoodleMap(){
+
+    }
+    GoodleMap.prototype.render=function(){
+        console.log("google渲染")
+    }
+    function BaiduMap(){
+
+    }
+    BaiduMap.prototype.render=function(){
+        console.log("百度渲染")
+    }
+    mapRender(new GoodleMap());
+    mapRender(new BaiduMap())
+    </script>
+</body>
+</html>

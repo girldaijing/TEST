@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: rgb(236, 236, 236);
+			}
+			.sp_cat{
+				width: 120px;
+				height: 40px;
+				position: relative;
+				float: right;
+				margin-right: 100px;
+			}
+			.shuliang{
+				display: inline-block;
+				background: #999;
+			    width: 20px;
+			    height: 20px;
+			    border-radius: 15px;
+			    color: #FFF;
+			    text-align: center;
+			    line-height: 20px;
+			}
+			.sp_content{
+				position: absolute;
+				width: 300px;
+				height: 200px;
+				line-height: 10px;
+				left: -160px;
+				top: 35px;
+				border-radius: 10px;
+				background: url(img/spcart1.png)  white no-repeat;
+				background-position: 60px 36px;
+				display: none;
+			}
+			
+			.sp_content_img{
+				position: absolute;
+				top: -7px;
+				left: 227px;
+			}
+			.sp_cat:hover .sp_content{
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+     <div class="sp_cat">
+     	<img src="img/spcart.png"  align="top"/><span>购物车</span><span class="shuliang">0</span>
+     	<div class="sp_content">
+     	<img src="img/spcart2.png" class="sp_content_img" />	
+     	</div>
+     </div>
+
+	</body>
+
+</html>

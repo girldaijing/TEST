@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #parent{
+        width: 200px;
+        height: 200px;
+        border: 1px solid blueviolet;
+    }
+    #child{
+        width: 100px;
+        height: 100px;
+        border: 1px solid brown;
+        margin: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        parent
+        <div id="child">
+          child
+        </div>
+    </div>
+    <script>
+    var parent=document.getElementById("parent");
+    var child=document.getElementById("child");
+    parent.onclick=function(){
+        alert("parent")
+    }
+    child.onclick=function(event){
+        alert("child")
+        event.stopPropagation();//阻止parent事件弹框发生
+    }
+    </script>
+</body>
+</html>

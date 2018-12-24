@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="one">你是否剁手</button>
+    <script>
+    var one=document.getElementById("one");
+    one.onclick=function(){
+         var value=window.confirm("你想剁手吗")
+         if(value){
+             window.location.href="http://www.baidu.com"
+         }else{
+             window.location.href="http://www.sogou.com/"
+         }
+    }
+    </script>
+</body>
+</html>

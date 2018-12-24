@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+    <style>
+    .one{
+        background: #44f;
+    }
+    .two{
+        background: #44ff11;
+    }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <like :param="count"></like>
+    </div>
+    <template id="like">
+        <button @click="add" v-bind:class="liked?'one':'two'">{{num}}</button>
+    </template>
+    <script>
+    Vue.component('like',{
+          template:"#like",
+          props:{
+              param:Number
+          },
+          data(){
+              return{
+                  num:this.param
+              }
+          },
+          methods:{
+              add(){
+                  this.num++;
+              }
+          }
+    })
+    new Vue({
+        el:"#app",
+        data:{
+            count:0
+        }
+    })
+    </script>
+</body>
+</html>

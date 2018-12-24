@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_705566_iu0wm5a7eq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.js"></script>
+    <script src="swiper/swiper.js"></script>
+    <style>
+        *{margin:0;padding:0}
+        .swiper-button-prev,.swiper-button-next{
+            background: none;
+        }
+        .iconfont{
+            font-size: 36px;
+            color:rgba(51, 51, 51, 0.473);
+        }
+        .swiper-pagination-bullet-active{
+            background:rgb(160, 83, 83);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/01.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/02.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/03.jpg" alt=""></a></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"><i class="iconfont">&#xe61f;</i></div>
+        <div class="swiper-button-next"><i class="iconfont">&#xe620;</i></div>
+    </div>
+</body>
+
+</html>

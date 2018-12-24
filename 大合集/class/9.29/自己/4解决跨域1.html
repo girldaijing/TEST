@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <script>
+    $(function(){
+        var url="https://api.douban.com/v2/book/search?q=javascript&count=1";
+        $.ajax({
+            url,
+            method:"get",
+            dataType:"jsonp",
+            success(data){
+                console.log(data);
+            },
+            error(xhr){
+                console.log(xhr.status);
+            }
+        })
+    })
+    </script>
+</body>
+</html>

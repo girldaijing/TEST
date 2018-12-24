@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tes" class="test"></div>
+    <script>
+        var test = document.getElementById("test") || document.getElementsByClassName("test")[0];
+        console.log(test);
+        test.onclick = function(){
+            this.style.backgroundColor = "green"
+        }
+        /* &&,||,! 
+
+                结果返回boolean值
+                && 两边都为true,结果为true
+                || 只要一遍为true,结果为true
+                !-->取反
+                */
+        var a = 10;
+        var b = 20;
+        var c = 30;
+        var d = 40;
+        console.log(a<b && c>d);
+        console.log(a<b && c<d);
+        console.log(a<b || c>d);
+        console.log(!(a>b))
+
+
+    </script>
+</body>
+
+</html>

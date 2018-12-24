@@ -1,0 +1,22 @@
+<!--pages/movies/movies.wxml-->
+<view class="list">
+
+    <view class="listpic">
+        <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000">
+            <block wx:for="{{images}}" wx:key="index">
+                <swiper-item>
+                    <image src="{{item}}" class="swiperImg"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    
+    <p class="muster">豆瓣电影榜单集合</p>
+    <p class="collect">最新，最IN的影视信息收集</p>
+    <ul>
+        <li><text>{{in_theaters.header}}</text><text bindtap="more" data-type="in_theaters">更多>></text></li>
+        <li><text>{{coming_soon.header}}</text><text bindtap="more" data-type="coming_soon">更多>></text></li>
+        <li><text>{{top250.header}}</text><text bindtap="more" data-type="top250">更多>></text></li>
+    </ul>
+</view>

@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{movies}}" wx:key="index">
+    <v-movie-item movieId="{item.id}" imgUrl="{{item.imgUrl}}" title="{{item.title}}"></v-movie-item>
+  </block>
+</view>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+</head>
+
+<body>
+    <div id="test">
+        <template v-for="item in msg" >
+            <p>{{item.name}}</p>
+        </template>
+    </div>
+    <script>
+        new Vue({
+            el: "#test",
+            data: {
+                msg: []
+            },
+            beforeCreate() {
+                // this.getData();
+                var url = "https://www.easy-mock.com/mock/5bad81fca1b7f6239a61664d/dataTest/vueTest";
+                $.get(url,res=>{
+                    console.log(res);
+                    console.log(this.msg);
+                    this.msg = res.data;
+                })
+                
+            }
+         
+        })
+    </script>
+</body>
+
+</html>

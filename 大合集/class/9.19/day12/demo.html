@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #test{
+            width:100px;
+            height:100px;
+            background: red;
+            position: relative;
+            left:100px;
+        }
+        body{
+            height:2000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+
+    </div>
+    <script>
+        var test = document.getElementById("test")
+        var ww = window.innerWidth;
+        var tw = test.offsetWidth;
+        var th = test.offsetHeight;
+        var tL = test.offsetLeft;
+        var arr = [234,44,55,66];
+        var min = Math.min(...arr);
+        var index = arr.indexOf(min);
+        var vh  =  document.documentElement.clientHeight;
+        console.log(vh);
+        window.onscroll = function(){
+            var top = document.documentElement.scrollTop;
+            
+            console.log(top);
+        }
+        var a = 10.77;
+        console.log(Math.floor(a));
+    </script>
+</body>
+</html>

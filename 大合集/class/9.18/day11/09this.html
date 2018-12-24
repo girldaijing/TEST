@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* bind */
+        // var wang = {
+        //     name:"王宇"
+        // }
+        // var cheng = function(){
+        //     console.log(this.name);
+        // }.bind(wang);
+        // cheng();
+        /*
+        call-->改变函数内部this,关键字的指向  call(thisObj,params)
+        apply-->改变函数内部this关键字的指向  apply(thisObj,[params])
+        call,
+        apply 
+         */
+         var cheng={
+             name:"cheng"
+         }
+         var jiang = {
+             name:"jiang",
+             sayName(a,b){
+                 console.log(this.name);
+                 console.log(a+b);
+             }
+         }
+        //  jiang.sayName.call(cheng,1,2);
+        jiang.sayName.apply(cheng,[1,2])
+    </script>
+</body>
+</html>

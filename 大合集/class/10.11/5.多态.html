@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+     function action(person){
+         person.act();
+     }
+     var Lighter=function(){
+
+     }
+     Lighter.prototype.act=function(){
+         console.log("打开灯")
+     }
+     var Actor=function(){
+
+     }
+     Actor.prototype.act=function(){
+         console.log("背台词")
+     }
+     var Commoner=function(){
+
+     }
+     Comment.prototype.act=function(){
+         console.log("撞死")
+     }
+     action(new Lighter);
+     action(new Actor);
+     action(new Commoner);
+
+     </script>  
+</body>
+</html>

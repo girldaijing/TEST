@@ -1,0 +1,11 @@
+.movie-item{
+    display: flex;
+    flex-direction:column; 
+}
+.movie-item image{
+    width: 200rpx;
+    height: 270rpx;
+}
+.evaluate{
+    color: #2d8cf0;
+}

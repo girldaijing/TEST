@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.baidu.com" id="a">hello</a>
+    <script>
+     var a=document.getElementById("a");
+     a.onclick=function(event){
+         var event;
+         try{
+             event=event;
+         }
+         catch(err){
+            //  ie9以下
+             event.window.event();
+         }
+         window.location.href="http://www.sogou.com/";
+        //  return false;  //阻止默认行为，阻止跳转百度
+         event.preventDefault();   //阻止默认行为，阻止跳转百度
+     }
+    </script>
+</body>
+</html>

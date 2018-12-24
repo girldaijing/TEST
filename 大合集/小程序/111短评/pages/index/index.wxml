@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="title">金庸武侠中你最喜欢的角色</view>
+
+<view class="like">
+  <block wx:for="{{tools.filter(comments,7)}}" wx:key="index">
+    <v-tag comment="{{item.comment}}"></v-tag>
+  </block>
+</view>
+
+<view class="title">金庸小说热门人物</view>
+<view class="hot">
+  <block wx:for="{{hots}}" wx:key="index">
+    <v-tag comment="{{item.comment}}" tag-class="{{index==0?'bg':''||index==1?'bg1':''}}">
+      <view slot="after">+{{item.num}}</view>
+    </v-tag>
+  </block>
+</view>

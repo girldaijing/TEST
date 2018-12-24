@@ -1,0 +1,16 @@
+{
+  "pages":[
+    
+    "pages/welcome/welcome",
+    "pages/index/index"
+ 
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#B3D4DB",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle":"#FFF",
+    "bacgroundColor":"#eee"
+  }
+  
+}

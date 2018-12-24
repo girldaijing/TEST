@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    #parent{
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #333;
+        position: relative;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        padding: 25px;
+    }
+    #fade{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #96514d;
+        opacity: 0.1;
+        left: 0;
+        top: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img src="现代.png" alt="">
+        <div id="fade"></div>
+    </div>
+    <script>
+    var parent=document.getElementById("parent");
+    var fade=document.getElementById("fade");
+    var opacity=getComputedStyle(fade).opacity*100;
+    var timer;
+    // parent.onmouseover=function(){
+    //     clearInterval(timer);
+    //     timer=setInterval(function(){
+    //         if(opacity==70){
+    //             clearInterval(timer)
+    //         }else{
+    //             opacity+=2;
+    //             fade.style.opacity=opacity/100
+    //         }
+    //     },100)
+    // }
+    // parent.onmouseout=function(){
+    //     clearInterval(timer);
+    //     timer=setInterval(function(){
+    //         if(opacity==30){
+    //             clearInterval(timer);
+    //         }else{
+    //             opacity-=2;
+    //             fade.style.opacity=opacity/100
+    //         }
+    //     },50)
+    // }
+
+
+    // 封装起来
+     parent.onmouseover=function(){
+        animate(70,2)
+    }
+    parent.onmouseout=function(){
+        animate(30,-2)
+    }
+    function animate(reach,add){
+        clearInterval(timer);
+        timer=setInterval(function(){
+            if(opacity==reach){
+                clearInterval(timer);
+            }else{
+                opacity+=add;
+                fade.style.opacity=opacity/100;
+            }
+        },50)
+    }
+   
+    </script>
+</body>
+</html>

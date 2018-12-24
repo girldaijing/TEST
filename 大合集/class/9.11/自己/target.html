@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">hello</p>
+    <script>
+    
+    var test=document.getElementById("test");
+    test.onclick=function(event){
+        var target;
+        try{
+            target=event.target;
+        }
+        catch(err){
+            target=window.event.srcElement;
+        }
+        alert(event)
+    }
+    </script>
+</body>
+</html>

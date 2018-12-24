@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/top.css">
+    <style>
+        table,td,th{
+            border:1px solid #333;
+            border-collapse: collapse;
+        }
+        table{
+            width:500px;
+            line-height: 50px;
+            text-align: center;
+        }
+        div{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="shop">
+        <input type="text" id="cell">
+        <button id="add">按钮</button>
+    </div>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>商城</th>
+                <th>手机</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tmall</td>
+                <td>小米</td>
+            </tr>
+            <tr>
+                <td>Tmall</td>
+                <td>小米</td>
+            </tr>
+            <tr>
+                <td>Tmall</td>
+                <td>小米</td>
+            </tr>
+            <tr>
+                <td>Tmall</td>
+                <td>小米</td>
+            </tr>
+            <tr>
+                <td>Tmall</td>
+                <td>小米</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        /* 
+        tHead-->获取 thead部分
+        tBodies-->获取 tBody部分 获取的是一个类数组
+        rows -->获取tr的集合
+         */
+        var table = document.getElementById("table");
+        table.tHead.style.background = "#ff2d51";
+        var rows = table.tBodies[0].rows;
+        for (var i = 0; i < rows.length; i++) {
+            if (i % 2 == 0) {
+                rows[i].style.background = "#EEEEEE"
+            } else {
+                rows[i].style.background = "#44CEF6"
+            }
+        }
+        var shop = document.getElementById("shop");
+        var cell = document.getElementById("cell");
+        var add = document.getElementById("add");
+        add.onclick = function(){
+            var shopValue = shop.value;
+            var cellValue = cell.value;
+            var tr = document.createElement("tr");
+
+            var td = document.createElement("td");
+            td.innerHTML = shopValue;
+            tr.appendChild(td);
+
+           
+
+            var td1 = document.createElement("td");
+            td1.innerHTML = cellValue;
+            tr.appendChild(td1);
+            
+            table.tBodies[0].appendChild(tr);
+        }
+    </script>
+</body>
+
+</html>

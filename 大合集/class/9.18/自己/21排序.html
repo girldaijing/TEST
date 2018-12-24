@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var arr=[42,6,234,5,13,56,765,24]
+    var copyArr=[...arr]
+    var c=arr.sort(function(a,b){
+          return b-a;
+    })
+    console.log(c)//降序
+
+
+    var d=arr.sort(function(a,b){
+        return a-b
+    })
+    // console.log(d)//升序
+
+
+    var e=copyArr.sort((a,b)=>a-b);
+    console.log(d)
+    console.log(e)//升序
+    </script>
+</body>
+</html>

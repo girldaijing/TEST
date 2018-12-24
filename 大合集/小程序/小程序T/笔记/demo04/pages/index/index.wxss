@@ -1,0 +1,11 @@
+@import "../../template/movie-item";
+.container{
+  padding:50rpx 30rpx 50rpx 30rpx;
+}
+.item{
+  float: left;
+  margin-top: 10px;
+}
+.item:not(:nth-child(3n+3)){
+  margin-right:45rpx;
+}

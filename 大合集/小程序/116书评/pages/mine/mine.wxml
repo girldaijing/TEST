@@ -1,0 +1,20 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine">
+    <image src="/images/bg.png" ></image>
+    <v-btn wx:if="{{!authorized}}" openType="getUserInfo" bind:onGet="onGetUserInfo" class="my" >
+        <image slot="image" src="/images/logo.png"></image>
+    </v-btn>
+    <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}" class="my"></image>
+    <!-- <open-data type="userAvatarUrl" class="my"></open-data>  不需要用户授权-->
+    <!-- <button 
+    type="primary"
+    open-type="getUserInfo"  
+    bindgetuserinfo="onGetUserInfo">获取用户信息</button> -->
+</view>
+
+<view class="likecontainer">
+    <block wx:for="{{likes}}" wx:key="index">
+            <v-item classic="{{item}}"></v-item>
+    </block> 
+</view>
+

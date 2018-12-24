@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "v-search": "/conponents/search/search"
+    },
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#333"
+}

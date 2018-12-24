@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="all">选中所有</button><br>
+    <button id="no">不选</button><br>
+    <button id="reverse">反选</button><br>
+    <input type="checkbox">足球
+    <input type="checkbox">排球
+    <input type="checkbox">篮球
+    <input type="checkbox">乒乓球
+
+
+    <script>
+    var all=document.getElementById("all");
+    var no=document.getElementById("no");
+    var reverse=document.getElementById("reverse");
+    var checkbox=document.getElementsByTagName("input");
+
+    all.onclick=function(){
+        for(var i=0;i<checkbox.length;i++){
+            checkbox[i].checked=true;
+        }
+    }
+    no.onclick=function(){
+        for(var i=0;i<checkbox.length;i++){
+            checkbox[i].checked=false;
+        }
+    }
+    reverse.onclick=function(){
+        for(var i=0;i<checkbox.length;i++){
+            checkbox[i].checked=!checkbox[i].checked;
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* match
+        i-->忽略大小写
+        g-->全局搜索
+        search()
+        replace()
+         */
+        var reg = /l/ig;
+        var str = "hellLo";
+        console.log(str.match(reg));
+        // console.log(reg.exec(str));
+        console.log(str.search(reg));
+        console.log(str.replace(reg,"**"))
+    </script>
+</body>
+</html>

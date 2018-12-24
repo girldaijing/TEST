@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.baidu.com" id="test">hello world</a>
+    <script>
+        /* 
+        场景  a,form
+        阻止默认行为  return false  event.preventDefault();
+         */
+        var a = document.getElementById("test");
+        // 在ie9以下event事件作为window的属性  winddow.event()
+        // chrome,event作为事件的参数
+        a.onclick = function(event){
+            try{
+                //chrome
+                event = event;
+            }catch(err){
+                //ie9以下
+                event = window.event();
+            }
+            window.location.href="https://www.sogou.com/";
+            // return false;
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>

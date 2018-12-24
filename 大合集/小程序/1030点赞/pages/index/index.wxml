@@ -1,0 +1,1 @@
+<v-like isLike="{{classic.like_status}}" count="{{classic.fav_nums}}" bind:like="onLike"></v-like>

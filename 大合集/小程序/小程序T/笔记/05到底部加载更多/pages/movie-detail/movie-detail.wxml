@@ -1,0 +1,4 @@
+<!--pages/movie-detail/movie-detail.wxml-->
+<view>
+    <image src="{{imgUrl}}"></image>
+</view>

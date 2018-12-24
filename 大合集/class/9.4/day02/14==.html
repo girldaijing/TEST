@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ==(了解)
+        /*
+        1.倘若有一边的值为boolean,那么先将boolean-->number再比较
+        2.倘若一边为字符串,一边为number,那么string-->number再比较
+        3.null==undefined 
+        4.NaN不能任何值计算,结果都为NaN
+        NaN!=NaN-->true
+        5.null和undefined比较之前不能将其转为其它类型
+         */
+         /* 
+         0,"",NaN,undefined,null
+          */
+          console.log(Number(""));
+          console.log(Number(null));
+          console.log(0=="");
+          console.log(NaN!=NaN)
+          console.log(null===undefined);
+          console.log(null==0);
+    </script>
+</body>
+</html>

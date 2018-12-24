@@ -1,0 +1,13 @@
+<!-- 
+  danmu-list:弹幕列表
+  enable-danmu:是否显示弹幕
+  danmu-btn:弹幕按钮
+  controls:是否显示视频控件，并没有什么用
+ -->
+<view class="section tc">
+  <video id="myVideo" src="http://221.228.226.5/15/t/s/h/v/tshvhsxwkbjlipfohhamjkraxuknsc/sh.yinyuetai.com/88DC015DB03C829C2126EEBBB5A887CB.mp4" danmu-list="{{danmuList}}" enable-danmu danmu-btn></video>
+  <view class="btn-area">
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+@import "movies-grid/movies-grid-template.wxss";
+page{
+    height:100%;
+    background: #fff;
+}
+.search{
+    display: flex;
+    align-items: center;
+    height:80rpx;
+    background: #fff;
+    padding-left: 30rpx;
+}

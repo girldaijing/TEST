@@ -1,0 +1,362 @@
+*{margin: 0;padding: 0;}
+div{
+    box-sizing: border-box;
+}
+.head{
+    height:75px;
+    background: rgb(25,190,190) url("../iframe课后练习/images/logo.png") no-repeat center center;
+}
+
+
+
+.nav{
+    background-color:rgb(240,240,240) ;
+    height: 40px;
+}
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-left{
+    width: 177px;
+    height: 40px;
+    line-height: 40px;
+    background:url("../iframe课后练习/images/location.png") no-repeat   center;
+    background-position-x: 30px;
+    float: left;
+}
+.nav-left a{
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+.nav-middle{
+    float: left;
+    width: 660px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.nav-middle ul{
+    width: 320px;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-middle li{
+    float: left;
+    text-align: center;
+}
+.nav-middle a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.nav-right{
+    float: left;
+    width: 163px;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+}
+.nav-right img{
+    vertical-align: middle;
+}
+.nav-right a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: rgb(254,167,0);
+}
+
+
+.left{
+    width: 180px;
+    height: 845px;
+    margin-top: 25px;
+    float: left;
+    background-color: rgb(240,240,240);
+    border: 1px solid rgb(225,225,225);
+}
+.left-1{
+    width: 180px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+}
+.left-1 a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+.left-1:hover a{
+    color:rgb(25,190,190);
+}
+.left-1:hover{
+    border-left: 3px solid rgb(25,190,190);
+    border-bottom: 1px solid rgb(225,225,225);
+}
+.left-2{
+    width: 180px;
+    height: 115px;
+    line-height: 37px;
+}
+
+.left-2 ul{
+    width: 180px;
+    list-style: none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pic1{
+    background: url("../iframe课后练习/images/open.png")  no-repeat 20px center;
+}
+
+.left-2 a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.left-2 a:hover{
+    color:rgb(25,190,190);
+}
+.left-2 li:hover{
+    border-left: 3px solid rgb(25,190,190);
+    border-bottom: 1px solid rgb(225,225,225);
+    border-top: 1px solid rgb(225,225,225);
+}
+.left-3{
+    width: 180px;
+    height: 80px;
+    line-height: 37px;
+}
+
+.left-3 ul{
+    width: 180px;
+    list-style: none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .pic1{
+    background: url("../iframe课后练习/images/open.png")  no-repeat left center;
+} */
+.left-3 a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.left-3 a:hover{
+    color:rgb(25,190,190);
+}
+.left-3 li:hover{
+    border-left: 3px solid rgb(25,190,190);
+    border-bottom: 1px solid rgb(225,225,225);
+    border-top: 1px solid rgb(225,225,225);
+}
+.left-4{
+    width: 180px;
+    height: 80px;
+    line-height: 37px;
+}
+
+.left-4 ul{
+    width: 180px;
+    list-style: none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .pic1{
+    background: url("../iframe课后练习/images/open.png")  no-repeat left center;
+} */
+.left-4 a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.left-4 a:hover{
+    color:rgb(25,190,190);
+}
+.left-4 li:hover{
+    border-left: 3px solid rgb(25,190,190);
+    border-top: 1px solid rgb(225,225,225);
+    border-bottom: 1px solid rgb(225,225,225);
+}
+.left-5{
+    width: 180px;
+    height: 185px;
+    line-height: 37px;
+}
+
+.left-5 ul{
+    width: 180px;
+    list-style: none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .pic1{
+    background: url("../iframe课后练习/images/open.png")  no-repeat left center;
+} */
+.left-5 a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.left-5 a:hover{
+    color:rgb(25,190,190);
+}
+.left-5 li:hover{
+    border-left: 3px solid rgb(25,190,190);
+    border-top: 1px solid rgb(225,225,225);
+    border-bottom: 1px solid rgb(225,225,225);
+}
+.left-6{
+    width: 180px;
+    height: 155px;
+    line-height: 37px;
+}
+
+.left-6 ul{
+    width: 180px;
+    list-style: none;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .pic1{
+    background: url("../iframe课后练习/images/open.png")  no-repeat left center;
+} */
+.left-6 a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.left-6 a:hover{
+    color:rgb(25,190,190);
+}
+.left-6 li:hover{
+    border-left: 3px solid rgb(25,190,190);
+    border-top: 1px solid rgb(225,225,225);
+    border-bottom: 1px solid rgb(225,225,225);
+}
+.left-7{
+    width: 180px;
+    height: 155px;
+    line-height: 37px;
+}
+
+.left-7 ul{
+    width: 180px;
+    list-style: none;
+   text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .pic1{
+    background: url("../iframe课后练习/images/open.png")  no-repeat left center;
+} */
+.left-7 a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.left-7 a:hover{
+    color:rgb(25,190,190);
+}
+.left-7 li:hover{
+    border-left: 3px solid rgb(25,190,190);
+    border-top: 1px solid rgb(225,225,225);
+    border-bottom: 1px solid rgb(225,225,225);
+}
+
+
+
+.right{
+    width: 810px;
+    height: 845px;
+    margin-top: 25px;
+    margin-left: 10px;
+    background-color: rgb(240,240,240);
+    float: left;
+    border: 1px solid rgb(225,225,225);
+    margin-bottom: 100px;
+}
+iframe{
+    width: 810px;
+    height: 300px;
+   
+}
+
+
+
+.footer{
+    height: 250px;
+    background-color: rgb(80, 80, 80);
+    margin-top: 300px;
+    clear: both;
+}
+
+.footer-top{
+    height: 180px;
+    border-bottom: 1px solid rgb(225,225,225);
+}
+.footer-top-left{
+    width: 330px;
+    height: 125px;
+    background:url("../iframe课后练习/images/logo1.png") no-repeat left top;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 25px;
+    line-height: 20px;
+    float: left;
+}
+.footer-top-left h6{
+    margin-top: 55px;
+}
+.footer-top-right{
+    width: 670px;
+    height: 125px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-top-right ul{
+    list-style: none;
+    height: 125px;
+}
+.footer-top-right li{
+    line-height: 30px;
+}
+.footer-top-right img{
+    vertical-align: middle;
+}
+.footer-top-right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.footer-bottom{
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+}
+.footer-bottom span{
+    margin-right: 15px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}

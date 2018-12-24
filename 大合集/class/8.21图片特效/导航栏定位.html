@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+        }
+    .nav{
+        width:60%;
+        height: 100px;
+        background-color: blueviolet;
+        padding: 0  20%;
+        line-height: 100px;
+        transition: all  2s;
+    }
+    .nav ul{
+        list-style: none;
+        overflow: hidden;
+        text-align: center;
+    }
+    .nav li{
+        float: left;
+        margin-right:30px;
+    }
+    body{
+        height:3000px;
+    }
+    .fixed{
+        background-color: brown;
+        position: fixed;
+        width: 60%;
+    }
+    .fixed a{
+        color: aliceblue !important;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <ul>
+            <li><a>one</a></li>
+            <li><a>two</a></li>
+            <li><a>three</a></li>
+            <li><a>four</a></li>
+            <li><a>five</a></li>
+        </ul>
+    </div>
+
+    <script>
+    window.onload=function(){
+        var nav=document.getElementById("nav");
+        document.onscroll=function(){
+            var sTop=document.documentElement.scrollTop;
+            console.log(sTop);
+            if(sTop>0){
+                nav.className="nav fixed";
+            }
+            else{
+                nav.className="nav";
+            }
+        }
+    }
+    </script>
+</body>
+</html>

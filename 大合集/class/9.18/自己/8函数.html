@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function go(){
+        console.log(1)
+    }
+    go.value=1;
+    var see=go;
+    see.index=3;
+    console.log(see.value)//1
+    console.log(go.index)//3
+
+    //see和go的一切都是共享的，只要一个人有另外一个就有可使用
+    
+    
+    var arr=[1,2,3];
+    var b=arr;
+    b.push(5);
+    arr.push(6)
+    console.log(arr)//1,2,3,5
+    console.log(b)//1,2,3,5
+    
+    
+    </script>
+</body>
+</html>

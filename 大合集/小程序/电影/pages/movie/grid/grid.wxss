@@ -1,0 +1,24 @@
+@import "../item/item";
+.grid{
+    display: flex;
+    flex-direction: column;
+    padding:16rpx;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#405F80;
+}
+.title,.grid-item{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.grid text{
+    font-size: 25rpx;
+}
+.more{
+    cursor: pointer;
+    color:#405F80
+}

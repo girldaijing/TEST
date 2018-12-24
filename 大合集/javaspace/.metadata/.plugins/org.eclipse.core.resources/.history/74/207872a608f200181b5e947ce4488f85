@@ -1,0 +1,23 @@
+package com.igeek.day02;
+
+import java.day02.FileNotFoundException;
+import java.day02.FileReader;
+
+public class Test1 {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		FileReader fr = new FileReader("d:/test.txt");
+		int i = fr.read();
+		int i2 = fr.read();
+		char c = (char) i;
+		char c2 = (char) i2;
+		System.out.println(c+""+c2);
+//		int c = 0;
+//		while((c=fr.read())!=-1) {
+//			System.out.println((char)c);
+//		}
+//		fr.close();
+	}
+
+}

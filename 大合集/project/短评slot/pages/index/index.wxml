@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="title">{{header}}热评</view>
+
+<view class="like">
+  <block wx:for="{{tools.filter(movies,7)}}" wx:key="index">
+    <v-tag title="{{item.title}}">
+      <text slot="after">+{{item.collect_count}}</text>
+    </v-tag>
+  </block>
+</view>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <style>
+        #test{
+            margin-left: 20px;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            border-radius: 20px;
+            border: 1px solid #333; 
+        }
+        </style>
+</head>
+<body>
+    <div id="test">
+        <input type="text" @keyup.enter="submit">
+        <p>{{title}}</p>
+        <img v-bind:src="url" alt="">
+    </div>
+    <script>
+    new Vue({
+        el:"#test",
+        data:{
+            title:"三体",
+            url:"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2248627938.webp"
+        },
+        methods:{
+            submit(event){
+                var self=this;
+                let value=event.target.value;
+                // console.log(value);
+                let url=`https://douban.uieee.com/v2/movie/search?q=${value}&count=1`;
+                this.$http.jsonp(url).then(res=>{
+                    this.handleData(res.body);
+                })
+
+            },
+            handleData(res){
+                let title=res.subjects[0].title;
+                let url=res.subjects[0].images.small;
+                this.title=title;
+                this.url=url;
+                console.log(res);
+            }
+        }
+    })
+    </script>   
+</body>
+</html>

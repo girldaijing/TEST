@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        预定义字符集:
+        针对备选字符集提供的简化符号
+        [0-9]  \d 
+        [0-9a-zA-Z_] \w
+        空格 \s
+        . 除换行以外的所有字符
+         */
+        var reg = /\s/;
+        var str="hello world12321_你";
+        console.log(str.replace(reg,""));//helloworld12321_你
+        console.log(str.replace(/\d/g,"*"));//hello world*****_你
+        console.log(str.replace(/\w/g,"*"));//***** ***********你
+        console.log(str.replace(/./g,"*"))//******************
+        
+    </script>
+</body>
+</html>

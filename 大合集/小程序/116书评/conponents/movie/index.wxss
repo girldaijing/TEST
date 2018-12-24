@@ -1,0 +1,19 @@
+/* conponents/movie/index.wxss */
+.typepic{
+    width: 23px;
+    height:71px;
+    position: absolute;
+    left: 20px;
+    top: 222px;
+}
+.backpic{
+    width: 100%;
+    height: 200px;
+}
+.words{
+    margin-top: 57px;
+    text-align: center;
+}
+.movie{
+    height: 278px;
+}

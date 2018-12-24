@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>点击按钮,看input的是否被选中</h1>
+    <input type="checkbox">足球
+    <button id="select">all</button>
+    <script>
+        var input = document.getElementsByTagName("input")[0];
+        // type="checkbox"输入框有checked属性,结果返回true,false
+        var select = document.getElementById("select");
+        select.onclick = function(){
+            console.log(input.checked);
+        }
+    </script>
+</body>
+
+</html>

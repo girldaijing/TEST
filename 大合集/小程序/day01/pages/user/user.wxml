@@ -1,0 +1,3 @@
+<view>hello</view>
+<import src="/pages/template/banner"></import>
+<template is="banner" data="{{imgUrl}}"></template>

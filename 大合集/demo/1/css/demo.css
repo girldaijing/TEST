@@ -1,0 +1,17 @@
+.one {
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+}
+
+.two {
+  width: 200px;
+  height: 200px;
+  background: brown;
+}
+
+.head, .footer {
+  width: 100px;
+  height: 100px;
+  color: aquamarine;
+}

@@ -1,0 +1,13 @@
+{
+  
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/welcome/welcome"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#B3D4DB",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "不知道"
+  }
+}

@@ -1,0 +1,56 @@
+/**index.wxss**/
+
+/* .input{
+  width: 100px;
+  height: 30px;
+  position: relative;
+}
+icon{
+  position: absolute;
+  right:55px ;
+  top:5px ;
+}
+button{
+  width: 60px;
+  height: 35px;
+  position: absolute;
+  left:0;
+  top: 5px;
+  font-size: 15px;
+} */
+
+
+.form{
+  width:750rpx;
+  background: #fff;
+  margin-top: 10rpx;
+  height: 80rpx;
+  position: relative;
+  display: block;
+}
+.form button{
+  width:100rpx;
+  height:80rpx;
+  font-size: 30rpx;
+  padding:0;
+  position: absolute;
+  right:0;
+}
+icon{
+  position: absolute;
+  left:0;
+  top:15rpx;
+}
+button{
+  border:none;
+}
+.form input{
+  width:500rpx;
+  height:80rpx;
+  left:0;
+  position: absolute;
+}
+page{
+  height:100%;
+  background: #eee;
+}

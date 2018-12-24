@@ -1,0 +1,34 @@
+.index-container{
+  position: relative;
+}
+.pic{
+  width: 100%;
+  height: 400rpx;
+}
+.logo{
+  width:200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: 130px;
+  left: 20px;
+}
+.nickname{
+  position: absolute;
+  top: 170px;
+  left: 120px;
+  font-size: 20px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.list>li{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color:#fff; 
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  padding-left: 20px;
+}

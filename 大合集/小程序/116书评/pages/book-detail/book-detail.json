@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "v-tag":"/conponents/comment/comment",
+        "v-like":"/conponents/like/love"
+    }
+}

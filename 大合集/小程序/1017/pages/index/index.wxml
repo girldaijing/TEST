@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<v-search search="{{msg}}" bind:like="onSearch"></v-search>

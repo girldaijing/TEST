@@ -1,0 +1,11 @@
+<template name="singleTemplate">
+    <view class="single">
+        <image src="{{imgUrl}}" class="pic" mode="aspectFit" catchtap="imgClick"></image>
+        <view class="one">
+        <p class="title">{{title}}</p>
+        <p class="date"><text>{{title}}</text><text>({{date}})</text></p>
+        <p class="director"><text>导演：</text><text>{{director}}</text></p>
+        </view>
+        <p class="average">{{average}}</p>
+    </view>
+</template>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <script>
+        var url="https://douban.uieee.com/v2/book/2567698"
+        var url2="http://api.douban.com/v2/movie/top250"
+        var book=$.ajax({url,dataType:"jsonp"})
+        var movie=$.ajax({url:url2,dataType:"jsonp"})
+        Promise.all([book,movie]).then(res=>{
+            let [book,movie]=res;
+            console.log(book)
+            console.log(movie)
+        })
+        </script>
+</body>
+</html>

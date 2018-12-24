@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+</head>
+<body>
+    <!-- promise可以用同步的方式去写异步 -->
+    <script>
+        // var url="https://api.douban.com/v2/book/search?q=三体&count=1";
+        // var promise=new Promise((resolve,reject)=>{
+        //     $.ajax({
+        //         url,
+        //         dataType:"jsonp",
+        //         success(res){
+        //             resolve(res)
+        //         },
+        //         error(err){
+        //             reject(err)
+        //         }
+        //     })
+        // })
+        // promise.then(res=>{
+        //     console.log(res)
+        // }),res=>{
+        //     console.log(err.status)
+        // }
+
+
+
+        promise(url).then(res=>{
+            var id=res.book[0].id;
+            let url="https://api.douban.com/v2/book/search?q=三体&count=1";
+            return promise(url);
+        }).then(res=>{
+            console.log(res.summary)
+            return promise(url);
+        }).then(res=>{
+
+        })
+        </script>
+</body>
+</html>

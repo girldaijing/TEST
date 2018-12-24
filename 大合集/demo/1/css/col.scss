@@ -1,0 +1,12 @@
+@for $i from 1 to 13 {
+    .col-#{$i}{ width:100%/12*$i;}
+  
+}
+@media(min-width:768px)and(max-width:992px){
+    @for $i from 1 to 13 {
+        .col-#{$i}{ width:100%/12*$i;}
+      
+    }
+}
+@import "base.css";
+@import "base.scss";

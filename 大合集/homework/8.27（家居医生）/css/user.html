@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin: 0;padding: 0;}
+       div{
+           box-sizing: border-box;
+       }
+    .user{
+         height: 140px;
+         width: 810px;
+         border-bottom: 1px solid rgb(225,225,225);
+       }   
+        .user-left{
+            width: 300px;
+            height: 140px;
+            position: relative;
+            float: left;
+        }
+        .user-left img{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .word{
+            height: 105px;
+            float: right;
+            text-align: left;
+            line-height: 35px;
+            font-size: 18px;
+            margin-top: 13px;
+            
+        }
+       
+        .user-left::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 90px;
+            right: -50px;
+            top: 25px;
+            background-color:rgb(225,225,225);
+        }
+       .user-middle{
+            width: 200px;
+            height: 140px;
+            line-height: 20px;
+            font-size: 14px;
+            float: left;
+            text-align: center;
+            margin-left: 50px;
+        }
+        .user-middle img{
+            margin-top: 45px;
+            margin-left: 30px;
+        }
+        .user-right img{
+            margin-top: 45px;
+            margin-left: 30px;
+        }
+        .user-right{
+            width: 200px;
+            height: 140px;
+            margin-left: 10px;
+            float: left;
+            font-size: 14px;
+        } 
+        .word-1 a{
+            color:rgb(25,190,190);
+            text-decoration: none;
+        }
+        .word-1{
+            height: 75px;
+            float: right;
+            text-align: left;
+            line-height: 19px;
+            font-size: 14px;
+            margin-top: 45px;    
+        }
+       
+    </style> 
+</head>
+<body>
+<div class="user">
+    <div class="user-left">
+        <img src="../iframe课后练习/images/user.png" alt="">
+        <div class="word">
+                <h3>用户名</h3>
+                <p>积分值：198分</p>
+                <p>我的消息：0条</p>
+        </div>
+    </div>
+    <div class="user-middle">
+        <img src="../iframe课后练习/images/weixin1.png" alt="">
+        <div class="word-1">
+        <p>微信绑定</p>
+        <p>未绑定 <a href="">立即绑定</a> </p>
+        </div>
+    </div>
+    <div class="user-right">
+            <img src="../iframe课后练习/images/phone.png" alt="">
+            <div class="word-1">
+            <p>手机号绑定</p>
+            <p>未绑定 <a href="">立即绑定</a> </p>
+     </div>
+    </div>
+</div>
+</body>
+</html>

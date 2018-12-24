@@ -1,0 +1,10 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../template/template-single/template-single"></import>
+
+<view class="find">正在上映.黄秋生</view>
+
+<view class="laji">
+    <block wx:for="{{movies}}" wx:key="index">
+        <template is="singleTemplate" data="{{...item}}" data-type="{{type}}"></template>
+    </block>
+</view>

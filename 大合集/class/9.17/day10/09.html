@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test" style="border:1px solid #333;color:red;">hello world</p>
+    <script>
+        window.onload = function(){
+            /* 
+            style属性下的几个方法
+            getPropertyValue,
+            setProperty,
+            removeProperty
+             */
+            var test = document.getElementById("test");
+            test.onclick = function(){
+                // var length = this.style.length;
+                // var color = this.style.getPropertyValue("color");
+                // var color = this.style.item(5)
+                console.log(this.style)
+                // this.style.removeProperty("color");
+                this.style.setProperty("color","yellow");
+            }
+        }
+    </script>
+</body>
+</html>

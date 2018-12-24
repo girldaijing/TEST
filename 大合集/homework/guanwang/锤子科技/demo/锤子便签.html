@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{text-decoration: none;}
+			body{
+				background: rgb(236, 236, 236);
+			}
+			.box{
+				margin-top: 50px;
+				margin-left: 300px;
+				width: 300px;
+				height: 350px;
+			    background: #FFF;
+			    text-align: center;
+			    position: relative;
+			}
+			.box:hover{
+				box-shadow: 0 0 15px #999999 inset;
+			}
+			.box:hover .app_h{
+				display: block;
+			}
+			.box>img{
+				margin-top: 90px;
+			}
+			.box>h6{
+				    font-size: 16px;
+				    line-height: 1.2;
+				    color: #424242;
+				    overflow: hidden;
+				    white-space: nowrap;
+				    text-overflow: ellipsis;
+				    font-weight: normal;
+				    margin-top: 40px;
+			}
+			.box>p{
+				margin: 6px auto;
+			    font-size: 12px;
+			    line-height: 1.2;
+			    width: 80%;
+			    text-align: center;
+			    height: 30px;
+			    color: #B2B2B2;
+			    word-wrap: break-word;
+			    word-break: break-all;
+			    text-overflow: ellipsis;
+			    display: block;
+			}
+			.box .app_log{
+				    margin-top: 30px;
+    				margin-bottom: 50px
+			}
+			.app_h{
+				    width: 90%;
+				    height: 90%;
+				    position: absolute;
+				    z-index: 9;
+				    top: 5%;
+				    left: 5%;
+				    background: #FFF;
+				    display: none;
+			} 
+			.app_h>img{
+				margin-top: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/9-1.jpg" />
+			<h6>锤子便签</h6>
+			<p>雅致的信纸、精心调整的文字排版这可能是最让人想写字的便签应用</p>
+			<div class="app_log"><img src="img/9-6.jpg" /></div>
+			<a href="javascript: ;"></a>
+			<div class="app_h">
+				<img src="img/9-8.jpg" />
+			</div>
+		</div>
+	</body>
+</html>

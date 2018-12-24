@@ -1,0 +1,23 @@
+/**index.wxss**/
+.title{
+  margin-top: 30px;
+  text-align: center;
+}
+.like v-tag:nth-child(1)>view{
+  background: rgb(228, 210, 245);
+}
+.like v-tag:nth-child(2)>view{
+  background:rgb(240, 204, 204);
+}
+.like v-tag:nth-child(3)>view{
+  background:rgb(208, 208, 243);
+}
+.like v-tag:nth-child(4)>view{
+  background:rgb(217, 247, 238);
+}
+.bg{
+  background:rgb(240, 204, 204) !important;
+}
+.bg1{
+  background:rgb(228, 210, 245) !important;
+}

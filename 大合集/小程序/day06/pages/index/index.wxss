@@ -1,0 +1,10 @@
+/**index.wxss**/
+@import "../../template/movie-item";
+.item{
+ 
+}
+.container{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}

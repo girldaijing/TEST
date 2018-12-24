@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/base.js"></script>
+    <style>
+        #test{
+            width:100px;
+            height:100px;
+            background: #ff2d51;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+
+    </div>
+    <script>
+        var test = document.getElementById("test");
+        //element.style.cssAttr -->获取的是内联样式
+        //chrome获取样式表的样式 getComputedStyle(element).cssAttr
+        // IE获取样式表的样式  element.currentStyle.cssAttr;
+        // var bg = getComputedStyle(test).backgroundColor;
+
+        // var bg = test.currentStyle.backgroundColor;
+        // alert(bg);
+        var bg;
+        try{
+            //chrome
+            bg = getComputedStyle(test).backgroundColor;
+        }catch(err){
+            //IE
+            bg= test.currentStyle.backgroundColor;
+        }
+        alert(bg);
+       
+    </script>
+</body>
+</html>

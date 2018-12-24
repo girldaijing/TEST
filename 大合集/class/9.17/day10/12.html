@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:400px;
+            overflow-y: scroll;
+            border:1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minus nesciunt incidunt fugit odio harum alias quae illo atque officia doloribus, magni non repellendus praesentium exercitationem eos quos deleniti autem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod quis quas provident libero ipsam corrupti quasi deserunt temporibus, optio, facilis, labore necessitatibus eos fugiat quaerat fugit aliquam eligendi doloremque!
+    </div>
+    <script>
+        /* 
+        滚动区域的width,height
+        scrollWidth
+        scrollHeight
+         */
+         var test = document.getElementById("test");
+         console.log(test.clientHeight)
+         console.log(test.scrollHeight);
+    </script>
+</body>
+</html>
